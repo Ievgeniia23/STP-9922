@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
-  
+
 }
 .nav-link {
   position: relative;
@@ -84,4 +84,4 @@
 
 [data-visible='close'] {
   display: none;
-}
+} */
