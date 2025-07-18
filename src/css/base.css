@@ -1,19 +1,14 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  	--cards: #3d7142;
+	--for-gallery-card: #fff9cc;
+	--text-color: #2f3e34;
+	--text-color-for-cards: #fff;
+	--background: #edf7f0;
+	--footer-color: #a2c5a5;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --font-family: "Nunito", sans-serif;
+
 }
 
 body {
@@ -22,6 +17,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: var(--background);
 }
 
 main {
@@ -29,4 +25,20 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+
+.section-title {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 24px;
+
+    @media (min-width: 1200px) {
+   margin-bottom: 32px;
+  }
 }
