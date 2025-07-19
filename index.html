@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Slide, match, and relax in Floral Master – the ultimate flower tile puzzle game. Match petals and clear your mind with peaceful gameplay and elegant floral visuals.">
-<meta name="keywords" content="Floral Master, flower puzzle game, slide and match, relaxing tile game, floral match, offline puzzle, casual flower game, flower tiles, match-2 puzzle">
-<meta name="author" content="Cedar Game Studio">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://digitexa.pro">
-<meta property="og:title" content="Floral Master – Slide & Match Your Way to Peace">
-<meta property="og:description" content="Discover harmony in every move. Match flower tiles, unlock themes, and let your puzzle bloom in this serene game.">
-<meta property="og:image" content="https://digitexa.pro/og-floralmaster.jpg">
-<meta property="og:url" content="https://digitexa.pro">
-<meta property="og:type" content="website">
-
-    <!-- <meta charset="UTF-8" />
-
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title> -->
+    <meta
+      name="description"
+      content="Slide, match, and relax in Floral Master – the ultimate flower tile puzzle game. Match petals and clear your mind with peaceful gameplay and elegant floral visuals."
+    />
+    <meta
+      name="keywords"
+      content="Floral Master, flower puzzle game, slide and match, relaxing tile game, floral match, offline puzzle, casual flower game, flower tiles, match-2 puzzle"
+    />
+    <meta name="author" content="Cedar Game Studio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://digitexa.pro" />
+    <meta
+      property="og:title"
+      content="Floral Master – Slide & Match Your Way to Peace"
+    />
+    <meta
+      property="og:description"
+      content="Discover harmony in every move. Match flower tiles, unlock themes, and let your puzzle bloom in this serene game."
+    />
+    <meta
+      property="og:image"
+      content="https://digitexa.pro/og-floralmaster.jpg"
+    />
+    <meta property="og:url" content="https://digitexa.pro" />
+    <meta property="og:type" content="website" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/STP-9922/favicon.svg" />
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/STP-9922/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9922/assets/index-C2_j-NHH.css">
+    <link rel="stylesheet" crossorigin href="/STP-9922/assets/index-hMXkQ8FY.css">
   </head>
   <body>
-    <!-- <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
+    <section class="header-section">
+  <div class="container header-container">
+     <h2 class="hidden">Header</h2>
+
+      <img
+        srcset="../img/logo@2x.png"
+        src="../img/logo@1x.png"
+        alt="logo"
+        class="logo"
+      />
+ <nav class="nav" data-nav>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+           <li>
+            <a href="#home" class="nav-link" data-nav-link>Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <li>
+            <a href="#about" class="nav-link" data-nav-link>About game</a>
           </li>
+          <li>
+            <a href="#advantages" class="nav-link" data-nav-link>Advantages</a>
+          </li>
+          <li>
+            <a href="#how-play" class="nav-link" data-nav-link>How to play</a>
+          </li>
+          <li>
+            <a href="#gallery-main" class="nav-link" data-nav-link>Gallery</a>
+          </li>
+          <li><a href="#reviews" class="nav-link" data-nav-link></a>Reviews</li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
+
+
+      <button
+        class="burger-btn"
+        type="button"
+        aria-label="Open menu"
+        data-burger-btn
+      >
+        <svg class="burger-regular" width="20" height="20">
+          <use href="/img/icons/sprites.svg#icon-burger-regular"></use>
+        </svg>
+      </button>
+    </header>
+
+
+  <!--Modal window -->
+
+  <nav class="mobile-menu" data-mobile-menu>
+    <button
+      class="close-btn"
+      type="button"
+      aria-label="Close menu"
+      data-close-btn
+    >
+      <svg class="burger-cross" width="20" height="20">
+        <use href="/img/icons/sprites.svg#icon-burger-cross"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu-list">
+      <li><a href="#home" data-menu-link>Home</a></li>
+      <li><a href="#about" data-menu-link>About game</a></li>
+      <li><a href="#advantages" data-menu-link>Advantages</a></li>
+      <li><a href="#how-play" data-menu-link>How to play</a></li>
+      <li><a href="#gallery-main" data-menu-link>Gallery</a></li>
+      <li><a href="#reviews" data-menu-link>Reviews</a></li>
+    </ul>
+
+  </nav>
+
+
+
+
     </div>
-  </div>
-</header> -->
+    </div>
+
+</section>
+
 
     <main>
       <!-- Loads the specified .html file -->
       
       
-      <!-- <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer> -->
-
       <section id="gallery-main">
   <div class="Container">
     <h2 class="Gallery-title">Gallery</h2>
@@ -198,43 +241,26 @@
   </div>
 </section>
 
-      <!-- <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path}"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</header> -->
-      
-      
-      
+      <section class="home-section">
+  <h1>Floral Master – Slide & Match</h1>
+  <p>Discover the Art of Matching in a Garden of Tranquility</p>
 
+<div  class="download-link">
+  <a
+    href="https://play.google.com/store/apps/details?id=com.cedargames.floralmaster&hl=en&gl=us"
+    class="google-play-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Play Now & Let Your Puzzle Bloom
+   </a>
+    <img src="../img/play-market-icon.png" alt="Download from Google Play"
+  />
+  </div>
+</section>
+
+      
+      
     </main>
 
     <!-- <footer class="footer">
