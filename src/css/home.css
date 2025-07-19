@@ -1,0 +1,121 @@
+.home-section {
+  background: rgba(0, 0, 0, 0.23);
+  backdrop-filter: blur(14px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  padding-block: 6px;
+  padding-top: 14px;
+  background-image: linear-gradient(
+      rgba(67, 69, 102, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/background-home-page.webp);
+
+  scroll-margin-top: 72px;
+  overflow: hidden;
+
+  @media (min-width: 1200px) {
+    padding-top: 72px;
+  }
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-color-for-cards);
+  text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  width: 257px;
+  margin-bottom: 12px;
+
+  @media (min-width: 1200px) {
+    width: 563px;
+    margin-bottom: 24px;
+  }
+}
+
+p {
+  width: 224px;
+  margin-bottom: 12px;
+  @media (min-width: 1200px) {
+    width: 575px;
+    margin-bottom: 48px;
+  }
+}
+
+.download-link {
+  font-size: 18px;
+  padding: 6px 8px;
+  width: 164px;
+  height: 30px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.52);
+  border-radius: 18px;
+}
+.decor {
+  position: absolute;
+  z-index: 2;
+}
+.decor-green-desk,
+.decor-black-desk {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.decor-black-mob {
+  width: 45px;
+  height: 94px;
+  box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 0.16);
+  transform: rotate(-4deg);
+ left: 202px;
+  top: 197px;
+}
+.decor-green-mob {
+  width: 43px;
+height: 92px;
+box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 0.16);
+transform: rotate(5deg);
+left: 254px;
+top: 164px;
+}
+
+@media (min-width: 1200px) {
+  .decor-green-mob,
+  .decor-black-mob {
+    display: none;
+  }
+}
+.decor-green-desk {
+width: 189px;
+height: 390px;
+box-shadow: 13px 10px 10px 0 rgba(0, 0, 0, 0.16);
+transform: rotate(5deg);
+left: 47px;
+top: 184px;
+}
+
+.decor-black-desk {
+width: 189px;
+height: 390px;
+box-shadow: 13px 10px 10px 0 rgba(0, 0, 0, 0.16);
+transform: rotate(-7deg);
+left: 930px;
+top: 255px;
+}
