@@ -4,8 +4,10 @@
   min-width: 320px;
 
   padding: 0 16px;
+  margin: 0 auto 50px;
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    margin: 0 auto 100px;
   }
 }
