@@ -9,6 +9,15 @@
   --font-family: 'Nunito', sans-serif;
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
 html,
 body {
   display: flex;
@@ -19,7 +28,7 @@ body {
   padding: 0;
   background-color: var(--background);
   box-sizing: border-box;
-}
+  }
 
 main {
   flex-grow: 1;
@@ -40,5 +49,15 @@ main:has(.back-link) {
 
   @media (min-width: 1200px) {
     margin-bottom: 32px;
+  }
+}
+
+section {
+  width: 100%;
+  padding-block: 25px;
+  scroll-margin-top: 30px;
+  @media (min-width: 1200px) {
+    padding-block: 50px;
+    scroll-margin-top: 72px;
   }
 }
