@@ -9,7 +9,7 @@
   margin-left: auto; */
   height: 100%;
   padding-block: 6px;
-  padding-top: 14px;
+  padding-top: 30px;
    padding-bottom: 106px;
   background-image: linear-gradient(
       rgba(67, 69, 102, 0.7),
@@ -17,13 +17,14 @@
     ),
     url(/img/home/background-home-page.webp);
 
-  scroll-margin-top: 72px;
-  overflow: hidden;
+  scroll-margin-top: 30px;
+  /* overflow: hidden; */
 
 
   @media (min-width: 1200px) {
-    margin-top: 72px;
-    padding-top: 115px;
+   scroll-margin-top: 72px;
+    padding-top: 72px;
+    /* padding-top: 115px; */
     padding-bottom: 316px;
   }
 }
@@ -32,11 +33,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 26px;
+  width: 257px;
 
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
     margin-inline: auto;
+    margin-top: 115px;
+    width: 597px;
   }
 }
 
@@ -83,26 +88,23 @@ p {
 }
 
 .download-link {
-  display: flex;
-  justify-content: space-between;
+  display:inline-flex;
+  gap: 8px;
   font-size: 18px;
   padding: 10px;
   width: 164px;
   height: 30px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.52);
-  border-radius: 18px;
+  border-radius: 8px;
   background-color: var(--text-color-for-cards);
-
+text-decoration: none;
   @media (min-width: 1200px) {
     padding: 24px;
      width: 383px;
   height: 70px;
   }
 
-.google-play-btn {
-
-}
- a {
+.google-play-icon {
   width: 24px;
   height: 24px;
  @media (min-width: 1200px) {
@@ -112,6 +114,9 @@ p {
 
  }
 
+ .google-play-btn .bold {
+  font-weight: 700;
+}
 }
 .decor {
   position: absolute;
