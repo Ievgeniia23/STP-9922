@@ -19,7 +19,6 @@
   height: auto;
   border-radius: 8px;
   display: block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1200px) {
@@ -30,7 +29,6 @@
 
   .Gallery-list {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 128px;
     row-gap: 32px;
   }
 }
