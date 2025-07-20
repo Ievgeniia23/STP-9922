@@ -2,8 +2,18 @@
 .container {
   width: 100%;
   min-width: 320px;
+<<<<<<< HEAD
+
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+=======
 margin-inline: auto;
   padding-inline: 16px;
+>>>>>>> 8669112c631985d709007ae493f9724cc0f31bd0
   }
 
   

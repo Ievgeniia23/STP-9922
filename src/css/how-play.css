@@ -1,0 +1,113 @@
+.how-to-play {
+  padding: 50px 0;
+}
+.how-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.how-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.how-text {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.how-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.how-item img {
+  max-width: 48px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Примеры цветов */
+.color.pink {
+  color: #ffa4b8;
+}
+.color.yellow {
+  color: #f4ba0b;
+}
+.color.blue {
+  color: #80aaff;
+}
+.color.violet {
+  color: #d09df3;
+}
+.color.red {
+  color: #fb946d;
+}
+
+@media (min-width: 1200px) {
+  .how-title {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 58px;
+  }
+
+  .how-list {
+    display: grid;
+    column-gap: 48px;
+    row-gap: 52px;
+  }
+
+  .how-item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .how-item:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .how-item:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .how-item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+    transform: translateY(64px);
+  }
+
+  .how-item:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+    transform: translateY(64px);
+  }
+
+  .how-title {
+    font-size: 38px;
+    margin-bottom: 32px;
+  }
+
+  .how-text {
+    max-width: 434px;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .how-item img {
+    max-width: 83px;
+    height: auto;
+    display: block;
+  }
+}
