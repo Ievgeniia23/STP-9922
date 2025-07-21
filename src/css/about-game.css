@@ -1,0 +1,40 @@
+.section-title {
+  margin-bottom: 24px;
+  @media (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.wrapper-about-game {
+  @media (min-width: 1200px) {
+    margin-right: 215px;
+  }
+}
+
+.title {
+  text-align: left;
+}
+
+.text1 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+}
+
+.text2,
+.text3 {
+  font-weight: 400;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 28px;
+    font-size: 20px;
+  }
+}

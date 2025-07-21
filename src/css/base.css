@@ -9,14 +9,11 @@
   --font-family: 'Nunito', sans-serif;
 }
 
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-
 
 html,
 body {
@@ -28,7 +25,12 @@ body {
   padding: 0;
   background-color: var(--background);
   box-sizing: border-box;
-  }
+  color: var(--text-color);
+  line-height: 1.6;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+}
 
 main {
   flex-grow: 1;
@@ -38,7 +40,7 @@ main:has(.back-link) {
 }
 
 .section-title {
-  font-family: var(--second-family);
+  font-family: var(--font-family);
   font-weight: 800;
   font-size: 20px;
   line-height: 1.2;
@@ -48,6 +50,7 @@ main:has(.back-link) {
   margin-bottom: 24px;
 
   @media (min-width: 1200px) {
+    font-size: 38px;
     margin-bottom: 32px;
   }
 }

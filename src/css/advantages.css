@@ -1,0 +1,32 @@
+.adv-wrapp {
+  background-color: var(--cards);
+  box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 16px;
+
+  width: 136px;
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 1200px) {
+    border-radius: 16px;
+    padding: 40px 32px;
+    width: 352px;
+    height: 214px;
+  }
+}
+.adv-text {
+  color: var(--text-color-for-cards);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  @media (min-width: 1200px) {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+}
