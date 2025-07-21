@@ -91,7 +91,7 @@
   .how-item:nth-child(5) {
     grid-column: 2;
     grid-row: 2;
-    transform: translateY(64px);
+    transform: translate Y(64px);
   }
 
   .how-title {
