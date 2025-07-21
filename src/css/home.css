@@ -72,7 +72,7 @@ h1 {
   }
 }
 
-p {
+.home-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;

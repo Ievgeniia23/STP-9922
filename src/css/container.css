@@ -1,4 +1,3 @@
-/* Styles for Mobile devices */
 .container {
   width: 100%;
   min-width: 320px;
@@ -10,3 +9,5 @@
     padding-inline: 48px;
   }
 }
+
+ 
