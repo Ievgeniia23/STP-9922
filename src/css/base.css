@@ -40,7 +40,7 @@ main:has(.back-link) {
 }
 
 .section-title {
-  font-family: var(--second-family);
+  font-family: var(--font-family);
   font-weight: 800;
   font-size: 20px;
   line-height: 1.2;
@@ -50,6 +50,7 @@ main:has(.back-link) {
   margin-bottom: 24px;
 
   @media (min-width: 1200px) {
+    font-size: 38px;
     margin-bottom: 32px;
   }
 }
