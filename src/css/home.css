@@ -1,20 +1,28 @@
 .home-section {
-   position: relative;
-    z-index: 2;
-background-image:
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 0.23),
+      rgba(26, 26, 26, 0.23)
+    ),
     url(/img/home/background-home-page.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-   min-height: 100vh;
+  min-height: 100vh;
   padding-block: 6px;
   padding-top: 56px;
   padding-right: 35px;
   padding-bottom: 106px;
- backdrop-filter: blur(14px); /* размытие */
-  -webkit-backdrop-filter: blur(14px);
- /* background: rgba(0, 0, 0, 0.23); */
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* backdrop-filter: blur(14px); */
+  /* background: rgba(0, 0, 0, 0.23);  */
+  /* /* размытие */
+  /* -webkit-backdrop-filter: blur(14px); */
+  /**/
+  /* backdrop-filter: blur(14px); */
 
   @media (min-width: 1200px) {
     scroll-margin-top: 72px;
@@ -23,38 +31,37 @@ background-image:
   }
 }
 
-.home-section::before {
+/* .home-section::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.23); /* полупрозрачная затемнёнка */
+  background: rgba(0, 0, 0, 0.23);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   z-index: 0;
-  pointer-events: none; /* чтобы не блокировал клики */
+  pointer-events: none;
 }
 
-/* Весь контент внутри должен быть выше псевдоэлемента */
 .home-section .container,
 .home-section .section-wrapper,
 .home-section .decor {
   position: relative;
   z-index: 1;
-}
+} */
 
 .section-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;         /* Центрує контент горизонтально */
-  justify-content: center;     /* Центрує контент вертикально (якщо потрібно) */
+  justify-content: flex-start;
+  margin-left: 0;
   width: 100%;
-  max-width: 597px;
-  margin-inline: auto;
-  text-align: center;
-  gap: 12px;
+  max-width: 257px;
 
   @media (min-width: 1200px) {
-    gap: 24px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 597px;
   }
 }
 h1 {
@@ -63,12 +70,13 @@ h1 {
   font-size: 18px;
   color: var(--text-color-for-cards);
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  width: 100%;                /* займає всю ширину .section-wrapper */
-  text-align: center;
+  width: 100%;
+  margin-bottom: 12px;
 
   @media (min-width: 1200px) {
     font-size: 40px;
     line-height: 0.85;
+    margin-bottom: 24px;
   }
 }
 
@@ -79,11 +87,12 @@ h1 {
   color: var(--text-color-for-cards);
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   width: 100%;
-  text-align: center;
+  margin-bottom: 12px;
 
   @media (min-width: 1200px) {
     font-size: 24px;
     line-height: 1.42;
+    margin-bottom: 48px;
   }
 }
 
@@ -106,89 +115,13 @@ h1 {
     height: 70px;
   }
 
-/* .overlay {
+  /* .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(7px);
   z-index: 1;
 } */
-
-/* .section-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-   width: 100%;
-
-
-
-  @media (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    margin-inline: auto;
-    /* width: 597px; */
-
-
-/* h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 18px;
-  text-align: center;
-  color: var(--text-color-for-cards);
-  text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  width: 100%;
-  margin-bottom: 12px;
-
-  @media (min-width: 1200px) {
-    width: 563px;
-    margin-bottom: 24px;
-    font-family: var(--font-family);
-    font-size: 40px;
-
-
-    line-height: 0.85;
-  }
-}
-
-p {
-  width: 100%;
-  margin-bottom: 12px;
-  color: var(--text-color-for-cards);
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-
-  @media (min-width: 1200px) {
-    width: 575px;
-    margin-bottom: 48px;
-    font-family: var(--font-family);
-    font-size: 24px;
-
-
-    line-height: 1.41667;
-    text-align: center;
-  }
-}
-
-.download-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-inline: auto;
-  gap: 8px;
-  font-size: 18px;
-  padding: 10px;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.52);
-  border-radius: 36px;
-  background-color: var(--text-color-for-cards);
-  text-decoration: none;
-  @media (min-width: 1200px) {
-    padding: 24px;
-    width: 383px;
-    height: 70px;
-  } */
 
   .google-play-icon {
     width: 24px;
