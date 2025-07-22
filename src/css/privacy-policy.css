@@ -1,11 +1,13 @@
 .policy-content {
   padding: 28px 16px 31px;
+  text-align: left;
 }
 .policy-title {
   font-weight: 800;
   font-size: 24px;
   line-height: 1.4;
   margin-bottom: 12px;
+  padding: 28px 0 12px;
 }
 .policy-date {
   font-weight: 400;
@@ -50,6 +52,7 @@
   .policy-title {
     font-size: 38px;
     line-height: 0.9%;
+    padding-top: 60px;
   }
   .policy-date {
     font-size: 20px;
