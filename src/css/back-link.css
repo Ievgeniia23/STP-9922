@@ -19,16 +19,15 @@
   display: inline-block;
   transition: stroke 0.3s, fill 0.3s;
 }
-/* .back-link:hover .back-link-icon {
-  stroke: #8bad8e;
-}
-.back-link:active .back-link-icon {
-  fill: #8bad8e;
-} */
 
 .logo-link-icon {
   width: 30px;
   height: 30px;
+}
+.back-link:hover,
+.back-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -44,7 +43,13 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
     background: var(--text-color-for-cards);
   }
-
+  .back-link:hover,
+  .back-link:focus {
+    background: var(--footer-color);
+  }
+  .back-link:active {
+    background: var(--for-gallery-card);
+  }
   .logo-link-icon {
     width: 72px;
     height: 72px;
