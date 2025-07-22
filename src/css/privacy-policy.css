@@ -40,6 +40,11 @@
   text-decoration: underline;
   transition: color 0.3s;
 }
+.policy-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: inherit;
+}
 
 .policy-list a:hover,
 .policy-email:hover,
