@@ -9,6 +9,7 @@
 @import url('./base.css');
 @import url('./container.css');
 
+@import url('./privacy-policy.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -19,5 +20,3 @@
 @import url('./home.css');
 @import url('./how-play.css');
 @import url('./reviews.css');
-
-

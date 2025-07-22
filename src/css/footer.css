@@ -81,7 +81,8 @@
   h3 {
     display: none;
   }
-  .footer-link-legal {
+  .footer-link-legal:hover,
+  .footer-link-legal:focus {
     text-decoration: underline;
   }
 

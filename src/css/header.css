@@ -38,6 +38,7 @@ logo {
 
 .container-wrapper {
   display: flex;
+  gap: 80px;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
@@ -68,8 +69,13 @@ logo {
 
   @media (min-width: 1200px) {
     display: flex;
+
+    gap: 80px;
+    margin-inline: auto;
+
     /* justify-content: flex-start; */
     flex: 1;
+
   }
 }
 
@@ -88,7 +94,7 @@ logo {
 .burger-btn,
 .close-btn {
   /* background: none; */
-  background-color: none;
+  background-color:none;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -111,6 +117,8 @@ logo {
   /* width: 887px;
   height: 48px; */
   display: flex;
+
+  gap: 40px;
   justify-content: space-between;
   list-style: none;
   align-items: center;
@@ -173,7 +181,9 @@ logo {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(14px);
+background: rgba(26, 26, 26, 0.23);
   background: rgba(26, 26, 26, 0.23);
+
 }
 
 .mobile-menu.is-open {
