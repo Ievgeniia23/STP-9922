@@ -23,6 +23,7 @@
   min-height: 237px;
   width: 100%;
   height: auto;
+  transition: all 0.3s ease;
   /* box-shadow: -3px 3px 11px 0 rgba(0, 0, 0, 0.15); */
   display: block;
 }
