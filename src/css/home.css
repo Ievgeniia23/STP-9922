@@ -28,11 +28,11 @@ background-image:
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.23); /* полупрозрачная затемнёнка */
-  backdrop-filter: blur(14px);
+  /* backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   z-index: 0;
-  pointer-events: none;
-}
+  pointer-events: none; */
+
 
 .home-section .container,
 .home-section .section-wrapper,
