@@ -1,53 +1,50 @@
 .home-section {
   position: relative;
-  z-index: 2;
-  background-image:
-    url(/img/home/background-home-page.webp);
-  background-repeat: no-repeat;
+  z-index: 1;
+   background-image:url(/img/home/background-blur.png);
+ /* background-image:url(/img/home/background-home.png); */
+ background-position: center top;
+  background-repeat:no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+
+  /* background-image: url(/img/home/background-grey.png),
+    url(/img/home/background-home.png);
+  background-position: -140px -26px, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 120% 105%, cover; */
+
+  min-height: auto;
   padding-block: 6px;
-  padding-top: 56px;
+  padding-top: 70px;
   padding-right: 35px;
   padding-bottom: 106px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  /* linear-gradient(
-      rgba(26, 26, 26, 0.23),
-      rgba(26, 26, 26, 0.23)
-    ), */
-
-  /* backdrop-filter: blur(14px); */
-  /* background: rgba(0, 0, 0, 0.23);  */
-  /* /* размытие */
-  /* -webkit-backdrop-filter: blur(14px); */
-  /**/
-  /* backdrop-filter: blur(14px); */
+  overflow: hidden;
 
   @media (min-width: 1200px) {
+     background-position: -140px -26px, center top;
+    background-size: 120% 105%, cover;
+    min-height: 100vh;
     scroll-margin-top: 72px;
-    padding-top: 187px;
+    padding-top: 212px;
     padding-bottom: 316px;
   }
 }
 
+/*
 .home-section::before {
-  content: '';
+  content: "";
   position: absolute;
-  inset: 0;
-
-  z-index: 0;
-  pointer-events: none;
-}
-
-.home-section .container,
-.home-section .section-wrapper,
-.home-section .decor {
-  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+min-height: 100vh;
+  background: url(/img/home/background-grey.png);
+  background-repeat: no-repeat;
+  background-position: center top;
   z-index: 1;
-}
+  pointer-events: none;
+} */
 
 .section-wrapper {
   display: flex;
@@ -64,6 +61,7 @@
     max-width: 597px;
   }
 }
+
 h1 {
   font-family: var(--font-family);
   font-weight: 800;
@@ -101,34 +99,31 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 6px;
   padding: 10px 16px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.52);
-  border-radius: 36px;
+  border-radius: 20px;
   background-color: var(--text-color-for-cards);
   text-decoration: none;
   margin-top: 12px;
+   width: 164px;
+  height: 30px;
 
   @media (min-width: 1200px) {
+    font-size: 8px;
+     font-size: 18px;
     padding: 24px;
     width: 383px;
     height: 70px;
+    border-radius: 50px;
   }
 
-  /* .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.32);
-  backdrop-filter: blur(7px);
-  z-index: 1;
-} */
-
   .google-play-icon {
-    width: 24px;
-    height: 24px;
+    width: 12px;
+    height: 13px;
     @media (min-width: 1200px) {
-      width: 32px;
-      height: 28px;
+      width: 28px;
+      height: 31px;
     }
   }
   .google-play-btn {
@@ -161,20 +156,21 @@ h1 {
 }
 
 .decor-black-mob {
-  width: 45px;
-  height: 94px;
-  box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 0.16);
-  transform: rotate(-4deg);
-  left: 202px;
-  top: 197px;
+  /* width: 43px; */
+  height: 92px;
+    transform: rotate(-10deg);
+  left: 254px;
+  top: 90px;
+
 }
 .decor-green-mob {
-  width: 43px;
+  /* width: 43px; */
   height: 92px;
-  box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 0.16);
-  transform: rotate(5deg);
-  left: 254px;
-  top: 164px;
+
+  transform: rotate(10deg);
+  left: 200px;
+  top: 130px;
+
 }
 
 @media (min-width: 1200px) {
@@ -186,19 +182,17 @@ h1 {
 .decor-green-desk {
   width: 189px;
   height: 390px;
-  box-shadow: 13px 10px 10px 0 rgba(0, 0, 0, 0.16);
-  transform: rotate(5deg);
-  left: 47px;
-  top: 184px;
+  /* transform: rotate(5deg); */
+  left: 80px;
+  /* top: 184px; */
 }
 
 .decor-black-desk {
   width: 189px;
   height: 390px;
-  box-shadow: 13px 10px 10px 0 rgba(0, 0, 0, 0.16);
-  transform: rotate(-7deg);
+  /* transform: rotate(-7deg); */
   left: 930px;
-  top: 255px;
+  top: 50px;
 }
 .decor-wrapper {
   position: absolute;

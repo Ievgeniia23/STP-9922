@@ -4,16 +4,16 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--for-gallery-card);
+  background-color: transparent;
   overflow: hidden;
 }
 header::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.15);
+  /* background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); */
   z-index: 0;
 }
 
