@@ -39,9 +39,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-9922/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/STP-9922/assets/vendor-DJeI3YU8.js">
-    <link rel="stylesheet" crossorigin href="/STP-9922/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/STP-9922/assets/styles-DtK4OvB1.css">
+    <link rel="modulepreload" crossorigin href="/STP-9922/assets/vendor-BwI6JMsn.js">
+    <link rel="stylesheet" crossorigin href="/STP-9922/assets/vendor-BVgMHBlI.css">
+    <link rel="stylesheet" crossorigin href="/STP-9922/assets/styles-edZ7ACy1.css">
   </head>
   <body>
     <header>
@@ -73,8 +73,6 @@
             <a href="#gallery-main" class="nav-link" data-nav-link>Gallery</a>
           </li>
 
-          <li><a href="#review-main" class="nav-link" data-nav-link></a>Reviews</li>
-
           <li><a href="#review-main" class="nav-link" data-nav-link>Reviews</a>
           </li>
 
@@ -87,10 +85,11 @@
         type="button"
         aria-label="Open menu"
         data-burger-btn
-      >🍔
-        <!-- <svg class="burger-regular" width="20" height="20">
+      >
+
+        <svg class="burger-regular" width="20" height="20">
           <use href="/img/icons/sprites.svg#icon-burger-regular"></use>
-        </svg> -->
+        </svg>
       </button>
       </div>
       </div>
@@ -106,9 +105,9 @@
       aria-label="Close menu"
       data-close-btn
     >❌
-      <!-- <svg class="burger-cross" width="20" height="20">
+      <svg class="burger-cross" width="20" height="20">
         <use href="/img/icons/sprites.svg#icon-burger-cross"></use>
-      </svg> -->
+      </svg>
     </button>
 
     <ul class="mobile-menu-list">
@@ -130,6 +129,9 @@
     <main>
       <!-- Loads the specified .html file -->
        <section class="home-section">
+
+ <div class="overlay-shape"></div>
+
   <div class="container">
     <div class="section-wrapper">
       <h1 id="home">Floral Master - Slide & Match</h1>
@@ -164,7 +166,7 @@
         class="decor decor-green-mob"
         alt="Image of game"
       />
-      >>>>>>> a617c8c (terms)
+
 
       <img
         src="/STP-9922/assets/screen-green-desk-qalhsBdt.png"
@@ -177,6 +179,7 @@
         alt="Image of game"
       />
     </div>
+
   </div>
 </section>
 
@@ -199,9 +202,25 @@ this flower-filled adventure</p>
   <div class="container">
 <h2 class="section-title">Advantages</h2>
 
-<div class="swiper">
+<!-- <div class="swiper-controls">
+  <button class="swiper-button-prev" data-swiper-button-prev="advantages">
+    <svg class="icon icon-prev">
+      <use href="/img/icons/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
+  <button class="swiper-button-next" data-swiper-button-next="advantages">
+    <svg class="icon icon-next">
+      <use href="/img/icons/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
 
-<ul class="swiper-wrapper">
+
+</div> -->
+
+
+<div class="swiper" data-swiper="advantages">
+
+<ul class="swiper-wrapper card-wrapper">
 
   <li class="swiper-slide adv-wrapp">
     <p class="adv-text">A Fresh Take on Matching: Slide, match, and clear tiles in a relaxing garden flow.</p>
@@ -236,7 +255,7 @@ this flower-filled adventure</p>
 
 </ul>
 </div>
-<div class="swiper-pagination"></div>
+<div class="swiper-pagination"  data-pagination="advantages"></div>
 
 
 </div>
@@ -296,7 +315,10 @@ this flower-filled adventure</p>
 </section>
 
       <section class="Gallery-main" id="gallery-main">
-  <div class="container">
+
+  
+
+
     <h2 class="Gallery-title">Gallery</h2>
     <ul class="Gallery-list">
       <li class="Gallery-item">
@@ -561,7 +583,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-DSoI_FoX.svg#icon-link"></use>
+              <use href="/STP-9922/assets/sprite-CQlZkHwC.svg#icon-link"></use>
             </svg>
             cedargamestudio.com
           </a>
@@ -569,7 +591,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-DSoI_FoX.svg#icon-mail"></use>
+              <use href="/STP-9922/assets/sprite-CQlZkHwC.svg#icon-mail"></use>
             </svg>
             info@digitexa.pro</a
           >
@@ -577,7 +599,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-DSoI_FoX.svg#icon-facebook"></use>
+              <use href="/STP-9922/assets/sprite-CQlZkHwC.svg#icon-facebook"></use>
             </svg>
             /floralmastergame</a
           >
@@ -585,7 +607,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-DSoI_FoX.svg#icon-instagram"></use>
+              <use href="/STP-9922/assets/sprite-CQlZkHwC.svg#icon-instagram"></use>
             </svg>
             @floralmasterpuzzle</a
           >
