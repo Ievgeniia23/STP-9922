@@ -1,9 +1,9 @@
 .home-section {
+  width: 100%;
   position: relative;
   z-index: 1;
   background-image:
      url(/img/home/background-blur.png);
-
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,18 +83,7 @@
   top: 30%;
   right: 20%;
 }
-
-
-
-
   }
-
-
-
-
-
-
-
 
 .google-play-btn {
   position: relative;
@@ -198,7 +187,6 @@
     max-width: 597px;
   }
 }
- */
 
 h1 {
   font-family: var(--font-family);
