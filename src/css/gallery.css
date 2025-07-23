@@ -47,6 +47,7 @@
   .Gallery-item img:hover,
   .Gallery-item img:focus {
     height: 450px;
+    width: auto;
     box-shadow: -6px 6px 12px 0 rgba(0, 0, 0, 0.15);
   }
 }
