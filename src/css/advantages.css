@@ -6,7 +6,7 @@
     padding: 16px;
     margin: 0;
     width: 136px;
-  height: 156px;
+    height: 156px;
 
     /* width: 126px;
     height: 146px; */
@@ -77,11 +77,10 @@
   width: 16px;
   height: 16px;
   color: var(--cards);
- @media (min-width: 1200px) {
-   width: 20px;
-  height: 34px;
- }
-
+  @media (min-width: 1200px) {
+    width: 20px;
+    height: 34px;
+  }
 }
 
 .icon-prev {
@@ -90,4 +89,70 @@
 .icon :hover,
 .icon :active {
   fill: var(--footer-color);
+}
+
+.advantages {
+  position: relative;
+  overflow: hidden;
+}
+.decor-leaf {
+  position: absolute;
+  background-image: url('../img/dekor/leaf-mobil.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 66px;
+  z-index: 0;
+  pointer-events: none;
+}
+.decor-top-left {
+  top: -30px;
+  left: -30px;
+  transform: rotate(35deg);
+}
+
+.decor-top-right {
+  top: -30px;
+  right: -30px;
+  transform: rotate(-55deg);
+}
+
+.decor-bottom-right {
+  bottom: -30px;
+  right: -30px;
+  transform: rotate(-139deg);
+}
+
+.decor-bottom-left {
+  bottom: -30px;
+  left: -30px;
+  transform: rotate(111deg);
+}
+@media (min-width: 1200px) {
+  .decor-leaf {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/dekor/leaf-comp.webp');
+  }
+  .decor-top-left {
+    top: -50px;
+    left: -50px;
+    transform: rotate(41deg);
+  }
+
+  .decor-top-right {
+    top: -50px;
+    right: -50px;
+  }
+
+  .decor-bottom-right {
+    bottom: -50px;
+    right: -50px;
+  }
+
+  .decor-bottom-left {
+    bottom: -50px;
+    left: -50px;
+    transform: rotate(125deg);
+  }
 }
