@@ -6,7 +6,7 @@ header {
   z-index: 1000;
   background-color: transparent;
   overflow: hidden;
-  border: solid red;
+
 }
 
 header::before {
@@ -153,13 +153,12 @@ box-sizing: border-box;
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--for-gallery-card);
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 999;
-  background-image: url(/img/home/background-home-page.webp);
+  background-image: url(../img/home/background-blur.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -168,8 +167,8 @@ box-sizing: border-box;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(14px);
-  background: rgba(26, 26, 26, 0.23);
-  background: rgba(26, 26, 26, 0.23);
+  /* background: rgba(26, 26, 26, 0.23);
+  background: rgba(26, 26, 26, 0.23); */
 }
 
 .mobile-menu.is-open {
@@ -177,9 +176,11 @@ box-sizing: border-box;
 }
 
 .mobile-menu-list {
+  text-align: center;
+  display: flex;
   list-style: none;
   padding: 0;
-  margin-top: 49px;
+  margin-top: 93px;
   display: flex;
   flex-direction: column;
   justify-content: center;
