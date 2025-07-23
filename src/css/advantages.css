@@ -1,20 +1,29 @@
 .adv-wrapp {
-  background-color: var(--cards);
-  box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 6px;
-  padding: 16px;
+  @media (min-width: 320px) {
+    background-color: var(--cards);
+    box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    padding: 16px;
+    margin: 0;
+    /* width: 136px;
+  height: 156px; */
 
-  width: 136px;
-  height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    width: 126px;
+    height: 146px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   @media (min-width: 1200px) {
     border-radius: 16px;
     padding: 40px 32px;
-    width: 352px;
-    height: 214px;
+    width: 332px;
+    height: 146px;
+
+    /* width: 352px;
+    height: 214px; */
   }
 }
 .adv-text {
@@ -23,10 +32,62 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33333;
+  margin: 0;
   @media (min-width: 1200px) {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.7;
   }
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+  position: static;
+}
+
+/* .swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--accent-color);
+} */
+
+.swiper-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  max-width: 360px;
+  margin-inline: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: var(--cards);
+ @media (min-width: 1200px) {
+   width: 20px;
+  height: 34px;
+ }
+
+}
+
+.icon-prev {
+  transform: rotate(180deg);
+}
+.icon :hover,
+.icon :active {
+  fill: var(--footer-color);
 }
