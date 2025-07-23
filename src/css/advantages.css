@@ -5,11 +5,11 @@
     border-radius: 6px;
     padding: 16px;
     margin: 0;
-    /* width: 136px;
-  height: 156px; */
+    width: 136px;
+  height: 156px;
 
-    width: 126px;
-    height: 146px;
+    /* width: 126px;
+    height: 146px; */
 
     display: flex;
     justify-content: center;
@@ -19,11 +19,11 @@
   @media (min-width: 1200px) {
     border-radius: 16px;
     padding: 40px 32px;
-    width: 332px;
-    height: 146px;
+    /* width: 332px;
+    height: 146px; */
 
-    /* width: 352px;
-    height: 214px; */
+    width: 352px;
+    height: 214px;
   }
 }
 .adv-text {
