@@ -91,13 +91,21 @@
   fill: var(--footer-color);
 }
 
+/* Decorations */
+
 .advantages {
   position: relative;
   overflow: hidden;
 }
 .decor-leaf {
+  position: absolute;
+  background-image: url('../img/dekor/leaf-mobil.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 66px;
   height: 66px;
+  z-index: 0;
+  pointer-events: none;
 }
 .decor-top-left {
   top: -30px;
@@ -126,6 +134,7 @@
   .decor-leaf {
     width: 150px;
     height: 150px;
+    background-image: url('../img/dekor/leaf-comp.webp');
   }
   .decor-top-left {
     top: -50px;
@@ -149,3 +158,11 @@
     transform: rotate(125deg);
   }
 }
+
+
+
+
+
+
+
+
