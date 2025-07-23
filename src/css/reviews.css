@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 124px;
 }
 .review-item {
   display: flex;
@@ -69,6 +70,88 @@
   width: auto;
   display: block;
 }
+
+.reviews {
+  position: relative;
+  overflow: hidden;
+}
+.decor-leaf {
+  width: 72px;
+  height: 72px;
+  opacity: 0.2;
+}
+.decor-1 {
+  bottom: -60px;
+  left: -15px;
+  transform: scaleX(-1);
+}
+.decor-2 {
+  bottom: -65px;
+  left: 50px;
+  transform: scaleX(-1);
+}
+.decor-3 {
+  bottom: -60px;
+  left: 100px;
+}
+.decor-4 {
+  bottom: -60px;
+  right: 80px;
+  transform: scaleX(-1);
+}
+.decor-5 {
+  bottom: -65px;
+  right: 30px;
+  transform: scaleX(-1);
+}
+.decor-6 {
+  bottom: -60px;
+  right: -15px;
+}
+
+.decor-7 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .decor-leaf {
+    width: 207px;
+    height: 207px;
+  }
+  .decor-1 {
+    bottom: -75px;
+    left: -40px;
+  }
+  .decor-2 {
+    bottom: -85px;
+    left: 115px;
+  }
+  .decor-3 {
+    bottom: -75px;
+    left: 300px;
+  }
+  .decor-4 {
+    bottom: -120px;
+    left: 480px;
+    transform: scaleX(-1);
+  }
+  .decor-5 {
+    bottom: -75px;
+    right: 335px;
+    transform: scaleX(-1);
+  }
+  .decor-6 {
+    bottom: -75px;
+    right: 155px;
+  }
+  .decor-7 {
+    display: block;
+    bottom: -85px;
+    right: -15px;
+    transform: scaleX(-1);
+  }
+}
+
 /* ==== ДЕСКТОПНАЯ ВЕРСИЯ ==== */
 @media (min-width: 1200px) {
   .review-wrapper {
