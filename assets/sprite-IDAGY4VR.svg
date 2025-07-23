@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+
+    <!-- arrow -->
+    <symbol id="icon-arrow" viewBox="0 0 17 32">
+      <path d="M1.558 28.676a1.523 1.523 0 0 0-.283 1.67 1.51 1.51 0 0 0 .848.801 1.53 1.53 0 0 0 1.651-.377l12.952-13.714a1.521 1.521 0 0 0 0-2.094L3.774 1.246a1.533 1.533 0 0 0-1.66-.395 1.513 1.513 0 0 0-.985 1.392 1.525 1.525 0 0 0 .43 1.094l11.965 12.67L1.559 28.674z"/>
+    </symbol>
+
+    <!-- burger-cross -->
+    <symbol id="icon-burger-cross" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M3.2 3.2 16 16m0 0L3.2 28.8M16 16l12.8 12.8M16 16 28.8 3.2"/>
+    </symbol>
+
+    <!-- burger-regular -->
+    <symbol id="icon-burger-regular" viewBox="0 0 32 32">
+      <path d="M4 7h24v2H4V7zm0 8h24v2H4v-2zm0 8h24v2H4v-2z" fill="currentColor"/>
+    </symbol>
+
+    <!-- facebook -->
+    <symbol id="icon-facebook" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M24 2.667h-4a6.67 6.67 0 0 0-6.667 6.667v4h-4v5.333h4v10.667h5.333V18.667h4l1.333-5.333h-5.333v-4A1.334 1.334 0 0 1 20 8h4V2.667z"/>
+    </symbol>
+
+    <!-- instagram -->
+    <symbol id="icon-instagram" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M22.667 2.667H9.334a6.667 6.667 0 0 0-6.667 6.667v13.333a6.667 6.667 0 0 0 6.667 6.667h13.333a6.667 6.667 0 0 0 6.667-6.667V9.334a6.667 6.667 0 0 0-6.667"/>
