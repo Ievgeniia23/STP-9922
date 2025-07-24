@@ -24,12 +24,12 @@ if (swiperEl && paginationEl) {
       prevEl: prevBtn,
       nextEl: nextBtn,
     },
-    slidesPerView: 2,
-    spaceBetween: 10,
+    slidesPerView:2,
+    spaceBetween: 12,
     breakpoints: {
       1200: {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 24,
       },
     },
   });
