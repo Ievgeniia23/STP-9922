@@ -147,7 +147,7 @@ box-sizing: border-box;
 
 /* Mobile menu */
 
-.mobile-menu {
+[data-mobile-menu] {
   position: fixed;
   top: 0;
   right: 0;
@@ -171,7 +171,11 @@ box-sizing: border-box;
   background: rgba(26, 26, 26, 0.23); */
 }
 
-.mobile-menu.is-open {
+/* .mobile-menu.is-open {
+  transform: translateX(0);
+} */
+
+[data-mobile-menu][data-menu-open] {
   transform: translateX(0);
 }
 
