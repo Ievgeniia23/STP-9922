@@ -63,6 +63,14 @@
   pointer-events: none;
   opacity: 0.2;
 }
+/* .decor-1fl {
+  width: 50px;
+  height: 50px;
+  transform: rotate(-32deg);
+  top: 53px;
+  left: 50px;
+  background-image: url('/img/how-play/Flowers-red-5.webp');
+} */
 @media (min-width: 1200px) {
   .decor-1fl {
     width: 138px;
@@ -70,20 +78,20 @@
     transform: rotate(-32deg);
     bottom: 13px;
     left: 400px;
-    background-image: url('../img/how-play/Flowers-red-5.webp');
+    background-image: url('/img/how-play/Flowers-red-5.webp');
   }
   .decor-2fl {
     width: 153px;
     height: 132px;
     top: 120px;
     left: -20px;
-    background-image: url('../img/how-play/Flowers-blue-1.webp');
+    background-image: url('/img/how-play/Flowers-blue-1.webp');
   }
   .decor-3fl {
     width: 170px;
     height: 170px;
     top: 270px;
     left: 680px;
-    background-image: url('../img/how-play/Flowers-violet-3.webp');
+    background-image: url('/img/how-play/Flowers-violet-3.webp');
   }
 }
