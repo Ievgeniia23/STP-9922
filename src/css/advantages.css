@@ -1,29 +1,28 @@
 .adv-wrapp {
-  @media (min-width: 320px) {
-    background-color: var(--cards);
-    box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 6px;
-    padding: 16px;
-    margin: 0;
-    width: 136px;
-    height: 156px;
-
-    /* width: 126px;
+  background-color: var(--cards);
+  box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 146px;
+  box-sizing: border-box;
+  /* width: 126px;
     height: 146px; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   @media (min-width: 1200px) {
     border-radius: 16px;
     padding: 40px 32px;
     /* width: 332px;
     height: 146px; */
-
-    width: 352px;
-    height: 214px;
+    /* max-width: 352px; */
+    min-height: 214px;
   }
 }
 .adv-text {
@@ -158,11 +157,3 @@
     transform: rotate(125deg);
   }
 }
-
-
-
-
-
-
-
-
