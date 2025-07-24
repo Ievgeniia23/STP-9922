@@ -4,16 +4,15 @@ const mobileMenu = document.querySelector('[data-mobile-menu]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
 
 burgerBtn.addEventListener('click', () => {
-  mobileMenu.classList.add('is-open');
+  mobileMenu.setAttribute('data-menu-open', '');
 });
 
 closeBtn.addEventListener('click', () => {
-  mobileMenu.classList.remove('is-open');
+  mobileMenu.removeAttribute('data-menu-open');
 });
 
-// Close with click at list
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
+    mobileMenu.removeAttribute('data-menu-open');
   });
 });

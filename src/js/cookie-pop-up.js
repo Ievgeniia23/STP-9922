@@ -3,15 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptBtn = document.querySelector('[data-cookie-accept]');
   const declineBtn = document.querySelector('[data-cookie-decline]');
 
-  // Проверка: если пользователь уже выбрал
   const savedChoice = localStorage.getItem('cookieConsent');
   if (!savedChoice) {
-    modal.classList.remove('hidden'); // Показать модалку
+    modal.setAttribute('data-visible', '');
   }
 
   const handleChoice = choice => {
-    localStorage.setItem('cookieConsent', choice); // 'accepted' или 'declined'
-    modal.classList.add('hidden'); // Скрыть модалку
+    localStorage.setItem('cookieConsent', choice);
+    modal.removeAttribute('data-visible');
   };
 
   acceptBtn.addEventListener('click', () => handleChoice('accepted'));
