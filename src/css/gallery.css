@@ -48,3 +48,42 @@
     box-shadow: -6px 6px 12px 0 rgba(0, 0, 0, 0.15);
   }
 }
+
+.Gallery-main {
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.decor-flow {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  pointer-events: none;
+  opacity: 0.2;
+}
+@media (min-width: 1200px) {
+  .decor-1fl {
+    width: 138px;
+    height: 176px;
+    transform: rotate(-32deg);
+    bottom: 13px;
+    left: 400px;
+    background-image: url('../img/how-play/Flowers-red-5.webp');
+  }
+  .decor-2fl {
+    width: 153px;
+    height: 132px;
+    top: 120px;
+    left: -20px;
+    background-image: url('../img/how-play/Flowers-blue-1.webp');
+  }
+  .decor-3fl {
+    width: 170px;
+    height: 170px;
+    top: 270px;
+    left: 680px;
+    background-image: url('../img/how-play/Flowers-violet-3.webp');
+  }
+}
