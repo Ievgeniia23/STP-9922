@@ -1,6 +1,7 @@
 :root {
-  --cards: #3d7142;
-  --for-gallery-card: #fff9cc;
+ --cards: #3d7142;
+
+    --for-gallery-card: #fff9cc;
   --text-color: #2f3e34;
   --text-color-for-cards: #fff;
   --background: #edf7f0;
@@ -10,6 +11,10 @@
 
   --swiper-theme-color:  #3d7142;
 }
+
+
+
+
 
 *,
 *::before,
