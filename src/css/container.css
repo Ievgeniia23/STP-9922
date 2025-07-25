@@ -1,3 +1,19 @@
+/* .container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+} */
+
+
 .container {
   box-sizing: border-box;
   width: 320px;
