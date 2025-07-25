@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: prevBtn,
       nextEl: nextBtn,
     },
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     spaceBetween: 12,
     breakpoints: {
       1200: {
