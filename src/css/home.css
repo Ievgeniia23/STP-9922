@@ -110,7 +110,6 @@
 .download-link:hover::after,
 .download-link:active::before,
 .download-link:active::after {
-
   content: "";
   position: absolute;
   width: 24px;
@@ -118,10 +117,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 0;
-  @media (min-width: 1200px) {
-    width: 54px;
-  height: 54px;
-  }
 }
 
 .download-link::before,
@@ -169,6 +164,48 @@ background-image: url('/img/flowers-left.png');
   left: calc(50% + 145px);
  }
 }
+
+@media (min-width: 1200px) {
+
+.download-link::before,
+.download-link::after,
+.download-link:hover::before,
+.download-link:hover::after,
+.download-link:active::before,
+.download-link:active::after {
+width: 54px;
+  height: 54px;
+}
+
+.download-link::before,
+.download-link:active::before {
+  top: 30px;
+  left: calc(50% - 200px);
+}
+.download-link:hover::before {
+  top: 30px;
+  left: calc(50% - 200px);
+}
+.download-link::after,
+.download-link:active::after {
+  top: -12px;
+  left: calc(50% + 145px);
+}
+.download-link:hover::after {
+  top: -12px;
+  left: calc(50% + 145px);
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
