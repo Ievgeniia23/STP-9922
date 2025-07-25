@@ -41,7 +41,7 @@
     <script type="module" crossorigin src="/STP-9922/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-9922/assets/vendor-BwI6JMsn.js">
     <link rel="stylesheet" crossorigin href="/STP-9922/assets/vendor-BVgMHBlI.css">
-    <link rel="stylesheet" crossorigin href="/STP-9922/assets/styles-C5nQIoaZ.css">
+    <link rel="stylesheet" crossorigin href="/STP-9922/assets/styles-DZyACuYI.css">
   </head>
   <body>
     <header>
@@ -80,17 +80,11 @@
       </nav>
 
 
-      <button
-        class="burger-btn"
-        type="button"
-        aria-label="Open menu"
-        data-burger-btn
-      >
-
-        <svg class="burger-regular" width="20" height="20">
-          <use href="/STP-9922/assets/sprite-BVf3rq3n.svg#icon-burger-regular"></use>
-        </svg>
-      </button>
+<button class="burger-btn" type="button" aria-label="Toggle menu" data-burger-btn>
+  <svg class="burger-icon">
+    <use id="burger-icon-use" href="/STP-9922/assets/sprite-Bl4cRO87.svg#icon-burger-regular"></use>
+  </svg>
+</button>
       </div>
       </div>
     </header>
@@ -99,16 +93,6 @@
   <!--Modal window -->
 
   <nav class="mobile-menu" data-mobile-menu>
-    <button
-      class="close-btn"
-      type="button"
-      aria-label="Close menu"
-      data-close-btn
-    >
-      <svg class="burger-cross" width="20" height="20">
-        <use href="../img/icons/sprite.svg@icon-burger-cross"></use>
-      </svg>
-    </button>
 
     <ul class="mobile-menu-list">
       <li><a href="#home" data-menu-link>Home</a></li>
@@ -125,10 +109,10 @@
 
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
        <section class="home-section" id="home">
+    <div class="container">
 <div class="screen-green-mob"></div>
 <div class="screen-black-mob"></div>
 <div class="screen-green-desc"></div>
@@ -136,12 +120,15 @@
 
  <!-- <div class="overlay-shape"></div> -->
 
-  <div class="container">
+
     <div class="section-wrapper">
       <h1 id="home">Floral Master - Slide & Match</h1>
-      <p class="home-text">
-        Discover the Art of Matching in a Garden of Tranquility
-      </p>
+      <div>
+
+      <div class="home-text">
+      <p >Discover the Art of</p>
+ <p >Matching in a Garden of Tranquility</p>
+      </div>
       <div class="download-link">
         <a
           href="https://play.google.com/store/apps/details?id=com.cedargames.floralmaster&hl=en&gl=us"
@@ -160,9 +147,6 @@
           <span class="bold">Play Now</span>
           & Let Your Puzzle Bloom
         </a>
-
-
-
         <img
           class="google-play-icon"
           src="data:image/png;base64,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"
@@ -196,6 +180,8 @@
         alt="Image of game"
       />
     </div> -->
+
+  </div>
 
   </div>
 </section>
@@ -656,7 +642,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="https://cedargamestudio.com">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-BVf3rq3n.svg#icon-link"></use>
+              <use href="/STP-9922/assets/sprite-Bl4cRO87.svg#icon-link"></use>
             </svg>
             cedargamestudio.com
           </a>
@@ -664,7 +650,7 @@ this flower-filled adventure</p>
         <li class="footer-item-contacts">
           <a class="footer-link-contacts" href="mailto:info@digitexa.pro">
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-BVf3rq3n.svg#icon-mail"></use>
+              <use href="/STP-9922/assets/sprite-Bl4cRO87.svg#icon-mail"></use>
             </svg>
             info@digitexa.pro</a
           >
@@ -675,7 +661,7 @@ this flower-filled adventure</p>
             href="https://facebook.com/floralmastergame"
           >
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-BVf3rq3n.svg#icon-facebook"></use>
+              <use href="/STP-9922/assets/sprite-Bl4cRO87.svg#icon-facebook"></use>
             </svg>
             /floralmastergame</a
           >
@@ -688,7 +674,7 @@ this flower-filled adventure</p>
             rel="noopener noreferrer"
           >
             <svg class="footer-icon">
-              <use href="/STP-9922/assets/sprite-BVf3rq3n.svg#icon-instagram"></use>
+              <use href="/STP-9922/assets/sprite-Bl4cRO87.svg#icon-instagram"></use>
             </svg>
             @floralmasterpuzzle
           </a>
