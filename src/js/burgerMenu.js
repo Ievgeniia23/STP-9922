@@ -12,11 +12,11 @@ const toggleMenu = () => {
   if (isOpen) {
     mobileMenu.setAttribute('data-menu-open', '');
     burgerBtn.classList.add('open');
-    iconUse.setAttribute('href', '/img/icons/sprite.svg#icon-burger-cross');
+    iconUse.setAttribute('href', './img/icons/sprite.svg#icon-burger-cross');
   } else {
     mobileMenu.removeAttribute('data-menu-open');
     burgerBtn.classList.remove('open');
-    iconUse.setAttribute('href', '/img/icons/sprite.svg#icon-burger-regular');
+    iconUse.setAttribute('href', './img/icons/sprite.svg#icon-burger-regular');
   }
 };
 
