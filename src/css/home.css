@@ -30,36 +30,36 @@
  @media (min-width: 320px) and (max-width: 1199px) {
 .screen-green-mob {
    position: absolute;
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
   z-index: 0;
   pointer-events: none;
    background-image: url('../img/home/screen-green-mob.png');
-  width: 44px;
-  height: 93px;
-  transform: rotate(10deg);
-  top: 60%;
-  right: 40%;
+  width: 52px;
+  height: 102px;
+  transform: rotate(9deg);
+  top: 62%;
+  right: 22%;
 }
 .screen-black-mob {
    position: absolute;
   background-image: url('../img/home/screen-black-mob.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 44px;
-  height: 93px;
+  width: 52px;
+  height: 102px;
   z-index: 0;
   pointer-events: none;
   transform: rotate(-10deg);
   top: 50%;
-  right: 28%;
+  right: 5%;
 }
  }
 
  @media (min-width: 1200px) {
   .screen-green-desc {
     position: absolute;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
   pointer-events: none;
@@ -179,6 +179,7 @@
   margin-left: 0;
   width: 100%;
   max-width: 257px;
+  padding-bottom: 10px;
 
   @media (min-width: 1200px) {
     margin-inline: auto;
@@ -226,7 +227,7 @@ h1 {
   align-items: center;
   gap: 8px;
   font-size: 6px;
-  padding: 10px 16px;
+  padding: 14px 16px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.52);
   border-radius: 20px;
   background-color: var(--text-color-for-cards);
@@ -258,6 +259,8 @@ h1 {
     height: 100%;
     text-align: center;
     text-decoration: none;
+    font-size: 7px;
+    font-weight: 600;
     line-height: 1.2;
   }
   .google-play-btn .bold {
