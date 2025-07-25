@@ -19,10 +19,11 @@
   flex-direction: column;
   gap: 22px;
 }
+
 .how-text {
   font-family: var(--font-family);
   color: var(--text-color);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
 }
