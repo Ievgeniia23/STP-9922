@@ -111,7 +111,6 @@
     font-weight: 700;
     line-height: 1.7;
   }
-
 }
 
 /* .container {
@@ -273,26 +272,26 @@
   pointer-events: none;
 }
 .decor-top-left {
-  top: -30px;
-  left: -30px;
+  top: -20px;
+  left: -25px;
   transform: rotate(35deg);
 }
 
 .decor-top-right {
-  top: -30px;
-  right: -30px;
+  top: -20px;
+  right: -25px;
   transform: rotate(-55deg);
 }
 
 .decor-bottom-right {
-  bottom: -30px;
-  right: -30px;
+  bottom: -40px;
+  right: -25px;
   transform: rotate(-139deg);
 }
 
 .decor-bottom-left {
-  bottom: -30px;
-  left: -30px;
+  bottom: -40px;
+  left: -25px;
   transform: rotate(111deg);
 }
 @media (min-width: 1200px) {

@@ -63,29 +63,40 @@
   pointer-events: none;
   opacity: 0.2;
 }
-/* .decor-1fl {
+.decor-1fl {
   width: 50px;
   height: 50px;
   transform: rotate(-32deg);
-  top: 53px;
-  left: 50px;
+  bottom: 700px;
+  left: 5px;
   background-image: url('/img/how-play/Flowers-red-5.webp');
-} */
+}
+.decor-2fl {
+  width: 50px;
+  height: 50px;
+  top: 800px;
+  left: -10px;
+  background-image: url('/img/how-play/Flowers-blue-1.webp');
+}
+.decor-3fl {
+  width: 50px;
+  height: 50px;
+  top: 320px;
+  left: 150px;
+  background-image: url('/img/how-play/Flowers-violet-3.webp');
+}
 @media (min-width: 1200px) {
   .decor-1fl {
     width: 138px;
     height: 176px;
-    transform: rotate(-32deg);
     bottom: 13px;
     left: 400px;
-    background-image: url('/img/how-play/Flowers-red-5.webp');
   }
   .decor-2fl {
     width: 153px;
     height: 132px;
     top: 120px;
     left: -20px;
-    background-image: url('/img/how-play/Flowers-blue-1.webp');
   }
   .decor-3fl {
     width: 170px;
