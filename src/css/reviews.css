@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  max-width: 215px;
+  max-width: 220px;
   overflow: hidden;
   flex-wrap: nowrap;
   margin-bottom: 10px;
@@ -58,10 +58,16 @@
   text-overflow: ellipsis;
 }
 .stars {
+  background-image: url('/img/user-reviews/5stars-mobil-png.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 59px;
   height: 10px;
 }
 .stars1 {
+  background-image: url('/img/user-reviews/4stars.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 46px;
   height: 10px;
 }
@@ -110,7 +116,8 @@
 }
 
 .decor-7 {
-  display: none;
+  bottom: -30px;
+  right: 130px;
 }
 
 @media (min-width: 1200px) {
@@ -228,10 +235,12 @@
   .stars {
     width: 140px;
     height: 24px;
+    background-image: url('../img/user-reviews/5stars-mobil-png.png');
   }
   .stars1 {
     width: 96px;
     height: 24px;
+    background-image: url('/img/user-reviews/4stars-comp.png');
   }
   .function-picture {
     height: 108px;

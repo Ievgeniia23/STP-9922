@@ -1,18 +1,33 @@
+
 const burgerBtn = document.querySelector('[data-burger-btn]');
-const closeBtn = document.querySelector('[data-close-btn]');
 const mobileMenu = document.querySelector('[data-mobile-menu]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
+const iconUse = document.getElementById('burger-icon-use');
 
-burgerBtn.addEventListener('click', () => {
-  mobileMenu.setAttribute('data-menu-open', '');
-});
+let isOpen = false;
 
-closeBtn.addEventListener('click', () => {
-  mobileMenu.removeAttribute('data-menu-open');
-});
+const toggleMenu = () => {
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    mobileMenu.setAttribute('data-menu-open', '');
+    burgerBtn.classList.add('open');
+    iconUse.setAttribute('href', './img/sprite.svg#icon-burger-cross');
+  } else {
+    mobileMenu.removeAttribute('data-menu-open');
+    burgerBtn.classList.remove('open');
+    iconUse.setAttribute('href', './img/sprite.svg#icon-burger-regular');
+  }
+};
+
+burgerBtn.addEventListener('click', toggleMenu);
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
+    isOpen = false;
     mobileMenu.removeAttribute('data-menu-open');
+    burgerBtn.classList.remove('open');
+    iconUse.setAttribute('href', './img/sprite.svg#icon-burger-regular');
   });
 });
+

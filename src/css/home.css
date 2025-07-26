@@ -30,45 +30,44 @@
  @media (min-width: 320px) and (max-width: 1199px) {
 .screen-green-mob {
    position: absolute;
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
   z-index: 0;
   pointer-events: none;
    background-image: url('../img/home/screen-green-mob.png');
-  width: 44px;
-  height: 93px;
-  transform: rotate(10deg);
-  top: 60%;
-  right: 40%;
+  width: 52px;
+  height: 102px;
+  transform: rotate(9deg);
+  top: 62%;
+  right: 22%;
 }
 .screen-black-mob {
    position: absolute;
   background-image: url('../img/home/screen-black-mob.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 44px;
-  height: 93px;
+  width: 52px;
+  height: 102px;
   z-index: 0;
   pointer-events: none;
   transform: rotate(-10deg);
   top: 50%;
-  right: 28%;
+  right: 5%;
 }
  }
 
  @media (min-width: 1200px) {
   .screen-green-desc {
     position: absolute;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
   pointer-events: none;
    background-image: url('../img/home/screen-green-desk.png');
-  width: 189px;
-  height: 390px;
-  transform: rotate(-10deg);
-  top: 20%;
-  left: 10%;
+  width: 210px;
+  height: 400px;
+   top: 35%;
+
 }
 .screen-black-desc {
     position: absolute;
@@ -77,18 +76,14 @@
   z-index: 0;
   pointer-events: none;
    background-image: url('../img/home/screen-black-desk.png');
-  width: 189px;
-  height: 390px;
-  transform: rotate(10deg);
-  top: 30%;
-  right: 20%;
+  width: 210px;
+  height: 400px;
+  top: 50%;
+  right: 2%;
 }
   }
 
-.google-play-btn {
-  position: relative;
-  /* overflow: visible; */
-}
+
 .link-decor {
   position: absolute;
   top: 0;
@@ -99,6 +94,219 @@
   z-index: 1;
 }
 
+.google-play-btn {
+  position: relative;
+  /* overflow: visible; */
+}
+
+.download-link {
+  position: relative;
+  display: inline-block;
+}
+
+.download-link::before,
+.download-link::after,
+.download-link:hover::before,
+.download-link:hover::after,
+.download-link:active::before,
+.download-link:active::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+.download-link::before,
+.download-link:active::before {
+background-image: url('/img/flowers-left.png');
+ top: 12px;
+  left: calc(50% - 85px);
+  transform: rotate(-11deg);
+ @media (min-width: 1200px) {
+  top: 30px;
+  left: calc(50% - 200px);
+ }
+}
+
+.download-link::after,
+.download-link:active::after {
+  background-image: url('/img/flowers-right.png');
+  top: -6px;
+  left: calc(50% + 60px);
+    transform: rotate(-11deg);
+    @media (min-width: 1200px) {
+  top: -12px;
+  left: calc(50% + 145px);
+ }
+}
+
+.download-link:hover::before {
+  background-image: url('/img/leaves-left.png');
+ top: 12px;
+  left: calc(50% - 85px);
+  transform: rotate(-11deg);
+  @media (min-width: 1200px) {
+  top: 30px;
+  left: calc(50% - 200px);
+ }
+}
+
+.download-link:hover::after {
+ background-image: url('/img/leaves-right.png');
+  top: -6px;
+  left: calc(50% + 60px);
+  transform: rotate(-11deg);
+   @media (min-width: 1200px) {
+  top: -12px;
+  left: calc(50% + 145px);
+ }
+}
+
+@media (min-width: 1200px) {
+
+.download-link::before,
+.download-link::after,
+.download-link:hover::before,
+.download-link:hover::after,
+.download-link:active::before,
+.download-link:active::after {
+width: 54px;
+  height: 54px;
+}
+
+.download-link::before,
+.download-link:active::before {
+  top: 30px;
+  left: calc(50% - 200px);
+}
+.download-link:hover::before {
+  top: 30px;
+  left: calc(50% - 200px);
+}
+.download-link::after,
+.download-link:active::after {
+  top: -12px;
+  left: calc(50% + 145px);
+}
+.download-link:hover::after {
+  top: -12px;
+  left: calc(50% + 145px);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 0;
+  width: 100%;
+  max-width: 257px;
+  padding-bottom: 10px;
+
+  @media (min-width: 1200px) {
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 597px;
+  }
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--text-color-for-cards);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  margin-bottom: 12px;
+
+  @media (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 0.85;
+    margin-bottom: 24px;
+  }
+}
+
+.home-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-for-cards);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  margin-bottom: 12px;
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.42;
+    margin-bottom: 48px;
+  }
+}
+
+.download-link {
+ position: relative;
+  z-index: 1;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 6px;
+  padding: 14px 16px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.52);
+  border-radius: 20px;
+  background-color: var(--text-color-for-cards);
+  text-decoration: none;
+  margin-top: 12px;
+  width: 164px;
+  height: 30px;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    gap: 12px;
+    padding: 24px;
+    width: 383px;
+    height: 70px;
+    border-radius: 50px;
+  }
+}
+
+  .google-play-icon {
+    width: 12px;
+    height: 13px;
+    @media (min-width: 1200px) {
+      width: 28px;
+      height: 31px;
+    }
+  }
+  .google-play-btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    /* font-size: 18px; */
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .google-play-btn .bold {
+    font-weight: 700;
+  }
 
 /* .bg-flowers,
 .bg-leavs {
@@ -172,157 +380,4 @@
  */
 
 
-.section-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 0;
-  width: 100%;
-  max-width: 257px;
 
-  @media (min-width: 1200px) {
-    margin-inline: auto;
-    align-items: center;
-    justify-content: center;
-    max-width: 597px;
-  }
-}
-
-h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 18px;
-  color: var(--text-color-for-cards);
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  margin-bottom: 12px;
-
-  @media (min-width: 1200px) {
-    font-size: 40px;
-    line-height: 0.85;
-    margin-bottom: 24px;
-  }
-}
-
-.home-text {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--text-color-for-cards);
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  margin-bottom: 12px;
-
-  @media (min-width: 1200px) {
-    font-size: 24px;
-    line-height: 1.42;
-    margin-bottom: 48px;
-  }
-}
-
-.download-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  font-size: 6px;
-  padding: 10px 16px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.52);
-  border-radius: 20px;
-  background-color: var(--text-color-for-cards);
-  text-decoration: none;
-  margin-top: 12px;
-  width: 164px;
-  height: 30px;
-
-  @media (min-width: 1200px) {
-    font-size: 8px;
-    font-size: 18px;
-    padding: 24px;
-    width: 383px;
-    height: 70px;
-    border-radius: 50px;
-  }
-
-  .google-play-icon {
-    width: 12px;
-    height: 13px;
-    @media (min-width: 1200px) {
-      width: 28px;
-      height: 31px;
-    }
-  }
-  .google-play-btn {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.2;
-  }
-  .google-play-btn .bold {
-    font-weight: 700;
-  }
-}
-
-/* .container {
-  position: relative;
-} */
-
-/* .decor {
-  position: absolute;
-  z-index: 2;
-}
-.decor-green-desk,
-.decor-black-desk {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
-}
-
-.decor-black-mob {
-
-  height: 92px;
-    transform: rotate(-10deg);
-  left: 254px;
-  top: 90px;
-
-}
-.decor-green-mob {
-
-  height: 92px;
-
-  transform: rotate(10deg);
-  left: 200px;
-  top: 130px;
-
-}
-
-@media (min-width: 1200px) {
-  .decor-green-mob,
-  .decor-black-mob {
-    display: none;
-  }
-}
-.decor-green-desk {
-  width: 189px;
-  height: 390px;
-
-  left: 80px;
-
-}
-
-.decor-black-desk {
-  width: 189px;
-  height: 390px;
-
-  left: 930px;
-  top: 50px;
-}
-.decor-wrapper {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-} */

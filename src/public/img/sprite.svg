@@ -8,15 +8,11 @@
 
 
     <!-- burger-cross -->
-
 <symbol id="icon-burger-cross" viewBox="0 0 32 32" fill="none" stroke="currentColor">
-  <path
-    d="M3.2 3.2 16 16m0 0L3.2 28.8M16 16l12.8 12.8M16 16 28.8 3.2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="4"
-  />
+  <path d="M3.2 3.2 L28.8 28.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M28.8 3.2 L3.2 28.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
 </symbol>
+
 
     <!-- burger-regular -->
     <symbol id="icon-burger-regular" viewBox="0 0 32 32">
