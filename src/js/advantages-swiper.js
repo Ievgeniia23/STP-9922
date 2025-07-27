@@ -1,8 +1,6 @@
 import Swiper from 'swiper';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiperEl = document.querySelector('[data-swiper="advantages"]');
@@ -26,9 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: prevBtn,
       nextEl: nextBtn,
     },
-    slidesPerView: 'auto',
-    spaceBetween: 12,
+    spaceBetween: 16, // базовое значение
     breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
       1200: {
         slidesPerView: 3,
         spaceBetween: 24,
