@@ -1,6 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
 
+
+<symbol id="icon-arrow-forward" viewBox="0 0 24 24">
+  <path d="M5.859 4.125l2.156-2.109 9.984 9.984-9.984 9.984-2.156-2.109 7.922-7.875z" fill="currentColor" />
+</symbol>
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="chevron-right" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M9.29 6.71a1 1 0 0 0 0 1.42L13.17 12l-3.88 3.88a1 1 0 0 0 1.42 1.42l4.59-4.59a1 1 0 0 0 0-1.42L10.71 6.7a1 1 0 0 0-1.42 0z"/>
+  </symbol>
+</svg> -->
+
+
+
+
     <!-- arrow -->
  <symbol id="icon-arrow" viewBox="0 0 17 32">
       <path d="M1.558 28.676a1.523 1.523 0 0 0-.283 1.67 1.51 1.51 0 0 0 .848.801 1.53 1.53 0 0 0 1.651-.377l12.952-13.714a1.521 1.521 0 0 0 0-2.094L3.774 1.246a1.533 1.533 0 0 0-1.66-.395 1.513 1.513 0 0 0-.985 1.392 1.525 1.525 0 0 0 .43 1.094l11.965 12.67L1.559 28.674z"/>
