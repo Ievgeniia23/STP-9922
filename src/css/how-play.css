@@ -28,6 +28,10 @@
   line-height: 1.7;
 }
 
+.how-text .color {
+  font-weight: 700;
+}
+
 .how-item {
   display: flex;
   align-items: center;

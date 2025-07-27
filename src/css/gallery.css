@@ -15,12 +15,13 @@
   row-gap: 32px;
 }
 .Gallery-item img {
-  border-radius: 6px;
+  border-radius: 16px;
   min-width: 136px;
   min-height: 237px;
-  width: 100%;
-  height: auto;
-  /* box-shadow: -3px 3px 11px 0 rgba(0, 0, 0, 0.15); */
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 10px -10px 10px 0 rgba(0, 0, 0, 0.04);
+  background: var(--for-gallery-card);
   display: block;
 }
 
@@ -32,11 +33,12 @@
   .Gallery-list {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 32px;
+    column-gap: 128px;
   }
   .Gallery-item img {
     border-radius: 16px;
-    min-width: 283px;
-    min-height: 380px;
+    width: 283px;
+    height: 380px;
     width: 100%;
     height: auto;
     /* box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.15); */
@@ -57,6 +59,8 @@
 
 .decor-flow {
   position: absolute;
+  top: 50%;
+  left: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -10;
@@ -64,45 +68,59 @@
   opacity: 0.2;
 }
 .decor-1fl {
-  width: 50px;
-  height: 50px;
+  width: 69px;
+  height: 90px;
   transform: rotate(-32deg);
-  bottom: 700px;
-  left: 5px;
+  transform: translate(calc(-50% - 145px), calc(-50% - 310px));
   background-image: url('/img/how-play/Flowers-red-5.webp');
 }
 .decor-2fl {
-  width: 50px;
-  height: 50px;
-  top: 800px;
-  left: -10px;
+  width: 90px;
+  height: 90px;
+  transform: translate(calc(-50% - 145px), calc(-50% + 380px));
   background-image: url('/img/how-play/Flowers-blue-1.webp');
 }
 .decor-3fl {
-  width: 50px;
-  height: 50px;
-  top: 320px;
-  left: 150px;
+  width: 90px;
+  height: 90px;
+  transform: translate(calc(-50% + 15px), calc(-50% - 100px));
   background-image: url('/img/how-play/Flowers-violet-3.webp');
+}
+.decor-4fl {
+  width: 130px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  background-image: url('/img/dekor/Flower-to-how.webp');
+  transform: translate(calc(-50% - 50px), calc(-50% + 145px));
+  opacity: 0.8;
+}
+.decor-5fl {
+  width: 90px;
+  height: 90px;
+  background-image: url('/img/how-play/Flowers-pink-2.webp');
+  transform: translate(calc(-50% + 150px), calc(-50% + 300px));
 }
 @media (min-width: 1200px) {
   .decor-1fl {
     width: 138px;
     height: 176px;
-    bottom: 13px;
-    left: 400px;
+    transform: translate(calc(-50% - 150px), calc(-50% + 380px));
   }
   .decor-2fl {
     width: 153px;
     height: 132px;
-    top: 120px;
-    left: -20px;
+    transform: translate(calc(-50% - 570px), calc(-50% - 290px));
   }
   .decor-3fl {
     width: 170px;
     height: 170px;
-    top: 270px;
-    left: 680px;
-    background-image: url('/img/how-play/Flowers-violet-3.webp');
+    transform: translate(calc(-50% + 170px), calc(-50% - 90px));
+  }
+  .decor-4fl {
+    display: none;
+  }
+  .decor-5fl {
+    display: none;
   }
 }
