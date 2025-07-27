@@ -84,78 +84,59 @@
 .decor-leaf {
   width: 72px;
   height: 72px;
+  top: 99%;
   opacity: 0.2;
 }
 .decor-1 {
-  bottom: -30px;
-  left: -15px;
-  transform: scaleX(-1);
+  transform: translate(calc(-50% - 140px), calc(-50%)) scaleX(-1);
 }
 .decor-2 {
-  bottom: -35px;
-  left: 50px;
-  transform: scaleX(-1);
+  transform: translate(calc(-50% - 90px), calc(-50% + 10px)) scaleX(-1);
 }
 .decor-3 {
-  bottom: -30px;
-  left: 100px;
+  transform: translate(calc(-50% - 40px), calc(-50%));
 }
 .decor-4 {
-  bottom: -30px;
-  right: 80px;
-  transform: scaleX(-1);
+  transform: translate(calc(-50% + 10px), calc(-50% + 10px)) scaleX(-1);
 }
 .decor-5 {
-  bottom: -35px;
-  right: 30px;
-  transform: scaleX(-1);
+  transform: translate(calc(-50% + 60px), calc(-50%)) scaleX(-1);
 }
 .decor-6 {
-  bottom: -30px;
-  right: -15px;
+  transform: translate(calc(-50% + 110px), calc(-50%));
 }
 
 .decor-7 {
-  bottom: -30px;
-  right: 130px;
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .decor-leaf {
     width: 207px;
     height: 207px;
+    top: 96%;
   }
   .decor-1 {
-    bottom: -75px;
-    left: -40px;
+    transform: translate(calc(-50% - 500px), calc(-50%));
   }
   .decor-2 {
-    bottom: -85px;
-    left: 115px;
+    transform: translate(calc(-50% - 340px), calc(-50% + 10px));
   }
   .decor-3 {
-    bottom: -75px;
-    left: 300px;
+    transform: translate(calc(-50% - 170px), calc(-50%));
   }
   .decor-4 {
-    bottom: -120px;
-    left: 480px;
-    transform: scaleX(-1);
-  }
+    transform: translate(calc(-50%), calc(-50% + 10px)) scaleX(-1);
+  } /* ниже на 10px */
   .decor-5 {
-    bottom: -75px;
-    right: 335px;
-    transform: scaleX(-1);
+    transform: translate(calc(-50% + 170px), calc(-50%)) scaleX(-1);
   }
   .decor-6 {
-    bottom: -75px;
-    right: 155px;
+    transform: translate(calc(-50% + 340px), calc(-50%));
   }
   .decor-7 {
     display: block;
-    bottom: -85px;
-    right: -15px;
-    transform: scaleX(-1);
+    transform: translate(calc(-50% + 500px), calc(-50%)) scaleX(-1);
   }
 }
 
