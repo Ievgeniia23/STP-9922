@@ -73,7 +73,7 @@ gap: 130px;
 .swiper-buttons .icon {
   width: 16px;
   height: 16px;
-  fill: var(#8bad8e)!important;
+  color: #8bad8e;
   pointer-events: auto;
   cursor: pointer;
   background: transparent;
@@ -85,7 +85,7 @@ gap: 130px;
 }
 .icon:hover
 .icon:active {
-  fill: var(--cards);
+  color: var(--cards);
    transform: scale(1.1);
 }
 }
