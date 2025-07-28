@@ -9,6 +9,8 @@
 }
 
 .swiper-slide.adv-wrapp {
+  display: flex;
+  flex-direction: column;
   background-color: var(--cards);
   border-radius: 6px;
   box-shadow: inset 4px -4px 2px 0 rgba(0, 0, 0, 0.12);
@@ -61,7 +63,6 @@
   gap: 10px;
   justify-content: space-around;
   transform: translateY(-50%);
-  /* pointer-events: none;  */
   z-index: 2;
   @media (min-width: 1200px) {
     justify-content: center;
@@ -72,7 +73,7 @@
 .swiper-buttons .icon {
   width: 16px;
   height: 16px;
-  color: var(#8bad8e)!important;
+  color: var(--footer-color);
   pointer-events: auto;
   cursor: pointer;
   background: transparent;
@@ -83,7 +84,7 @@
     height: 34px;
   }
   .icon:hover .icon:active {
-    color: var(--cards)!important;
+    color: var(--cards);
     transform: scale(1.1);
   }
 }
