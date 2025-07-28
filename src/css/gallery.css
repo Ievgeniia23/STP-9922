@@ -21,7 +21,6 @@
   padding: 0;
   margin: 0;
   box-shadow: inset 10px -10px 10px 0 rgba(0, 0, 0, 0.04);
-  background: var(--for-gallery-card);
   display: block;
 }
 
