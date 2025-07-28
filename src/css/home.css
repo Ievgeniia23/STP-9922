@@ -24,6 +24,10 @@ transition: background-position 0.4s ease-in-out;
   }
 }
 
+.container {
+  position: relative;
+}
+
 /* Decorative elements */
 
 @media (min-width: 320px) and (max-width: 1199px) {
@@ -65,7 +69,7 @@ transition: background-position 0.4s ease-in-out;
     background-image: url('../img/home/screen-green-desk.png');
     width: 250px;
     height: 400px;
-    top: 25%;
+    top: -12%;
   }
   .screen-black-desc {
     position: absolute;
@@ -76,8 +80,9 @@ transition: background-position 0.4s ease-in-out;
     background-image: url('../img/home/screen-black-desk.png');
     width: 260px;
     height: 480px;
-    top: 30%;
-    left: 73%;
+    top: 18%;
+    left: 85%;
+    transform: translateX(-50%);
 
   }
 }
