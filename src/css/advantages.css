@@ -79,11 +79,12 @@
   background: transparent;
   border: none;
   padding: 0;
-@media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     width: 20px;
     height: 34px;
   }
-  .icon:hover .icon:active {
+  .icon:hover,
+  .icon:active {
     color: var(--cards);
     transform: scale(1.1);
   }
