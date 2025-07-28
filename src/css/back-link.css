@@ -14,7 +14,7 @@
 .back-link-icon {
   height: 14px;
   width: 8px;
-  fill: var(--cards);
+  fill: var(--cards) !important;
   transform: scaleX(-1);
   display: inline-block;
   transition: stroke 0.3s, fill 0.3s;

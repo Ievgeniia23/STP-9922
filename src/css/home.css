@@ -4,6 +4,7 @@
   z-index: 1;
   background-image: url(/img/home/background-blur.png);
   background-position: center top;
+   /* background-position: calc(50% - 30px) calc(0% - 10px); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: auto;
@@ -12,14 +13,14 @@
   padding-right: 35px;
   padding-bottom: 94px;
   overflow: hidden;
-
+transition: background-position 0.4s ease-in-out;
   @media (min-width: 1200px) {
     background-position: center top;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: contain;
+    /* min-height: auto; */
     scroll-margin-top: 72px;
     padding-top: 212px;
-    padding-bottom: 279px;
+    padding-bottom: 310px;
   }
 }
 
@@ -36,7 +37,7 @@
     width: 52px;
     height: 102px;
     transform: rotate(9deg);
-    top: 62%;
+    top: 59%;
     right: 22%;
   }
   .screen-black-mob {
@@ -73,10 +74,11 @@
     z-index: 0;
     pointer-events: none;
     background-image: url('../img/home/screen-black-desk.png');
-    width: 400px;
-    height: 450px;
-    top: 33%;
-    right: -10%;
+    width: 260px;
+    height: 480px;
+    top: 30%;
+    left: 73%;
+
   }
 }
 
