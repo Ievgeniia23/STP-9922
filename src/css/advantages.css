@@ -72,7 +72,7 @@
 .swiper-buttons .icon {
   width: 16px;
   height: 16px;
-  color: var(#8bad8e);
+  color: var(#8bad8e)!important;
   pointer-events: auto;
   cursor: pointer;
   background: transparent;
@@ -83,7 +83,7 @@
     height: 34px;
   }
   .icon:hover .icon:active {
-    color: var(--cards);
+    color: var(--cards)!important;
     transform: scale(1.1);
   }
 }
