@@ -9,6 +9,20 @@ header {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+
 header::before {
   content: '';
   position: absolute;
@@ -30,6 +44,7 @@ logo {
   line-height: 1.7;
   color: #26532a;
   transition: fill 0.3s ease, transform 0.3s ease;
+
 }
 .nav-link:hover {
   font-family: var(--font-family);
@@ -172,6 +187,7 @@ logo {
   transform: translateX(0);
 }
 
+
 .mobile-menu-list {
   text-align: center;
   display: flex;
@@ -183,6 +199,7 @@ logo {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+  box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.015);
 }
 
 .mobile-menu-list a {
@@ -192,7 +209,12 @@ logo {
   font-weight: 900;
   font-size: 24px;
   line-height: 1.4;
+  transition: all 0.3s ease;
 }
+.mobile-menu-list a:hover {
+  text-decoration: underline;
+}
+
 
 .burger-icon {
   width: 30px;
