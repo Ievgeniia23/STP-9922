@@ -83,11 +83,12 @@
     width: 20px;
     height: 34px;
   }
-  .icon:hover,
-  .icon:active {
-    color: var(--cards);
-    transform: scale(1.1);
-  }
+}
+
+.swiper-buttons .icon:hover,
+.swiper-buttons .icon:active {
+  color: var(--cards);
+  transform: scale(1.1);
 }
 
 .icon-prev {
@@ -121,13 +122,116 @@
   background-color: #8bad8e;
 }
 
-/* Декор */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decoration */
+
 .advantages {
   position: relative;
   overflow: hidden;
 }
 
-/* Decorations */
+.decor-adv {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  /* opacity: .2; */
+  width: 67px;
+  height: 67px;
+  background-image: url('../img/advantages/leaf-adv-mob.png');
+}
+
+@media (min-width: 1200px) {
+  .decor-adv {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/advantages/leaf-adv-desc.png');
+  }
+}
+
+.adv-left-top-mob {
+  top: -10px;
+  left: -33px;
+  transform: rotate(30deg);
+}
+
+.adv-left-bottom-mob {
+  bottom: 25px;
+  left: -25px;
+  transform: rotate(120deg);
+}
+
+.adv-right-top-mob {
+  top: 10px;
+  right: -28px;
+  transform: rotateY(180deg) rotate(30deg);
+}
+
+.adv-right-bottom-mob {
+  bottom: 16px;
+  right: -28px;
+  transform: rotateY(180deg) rotate(130deg);
+}
+.adv-left-top-desc,
+.adv-left-bottom-desc,
+.adv-right-top-desc,
+.adv-right-bottom-desc {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .adv-left-top-mob,
+  .adv-left-bottom-mob,
+  .adv-right-top-mob,
+  .adv-right-bottom-mob {
+    display: none;
+  }
+  .adv-left-top-desc,
+  .adv-left-bottom-desc,
+  .adv-right-top-desc,
+  .adv-right-bottom-desc {
+    display: block;
+  }
+}
+
+
+.adv-left-top-desc {
+  top: -10px;
+  left: -73px;
+  transform: rotate(30deg);
+}
+
+
+.adv-left-bottom-desc {
+  bottom: 25px;
+  left: -65px;
+  transform: rotate(120deg);
+}
+
+
+.adv-right-top-desc {
+  top: -60px;
+  right: -68px;
+  transform: rotateY(180deg) rotate(30deg);
+}
+
+
+.adv-right-bottom-desc {
+  bottom: -20px;
+  right: -48px;
+  transform: rotateY(180deg) rotate(130deg);
+}
+
+/* Декор
+.advantages {
+  position: relative;
+  overflow: hidden;
+}
+
 .decor-leaf {
   position: absolute;
   top: 50%;
@@ -162,4 +266,4 @@
   .decor-bottom-left {
     transform: translate(calc(-50% - 620px), calc(-50% - 145px)) rotate(125deg);
   }
-}
+} */
