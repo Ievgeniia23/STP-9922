@@ -85,15 +85,42 @@
   }
 }
 
+.icon-prev {
+   transform: rotate(180deg)
+}
+
+
 .swiper-buttons .icon:hover,
-.swiper-buttons .icon:active {
+.swiper-buttons .icon:active,
+ .swiper-buttons .icon:focus {
   color: var(--cards);
+}
+
+.icon-prev:hover,
+.icon-prev:active,
+.icon-prev:focus {
+   transform: rotate(180deg) scale(1.1);
+}
+
+.icon-next:hover,
+.icon-next:active,
+.icon-next:focus {
   transform: scale(1.1);
 }
 
-.icon-prev {
-  transform: rotate(180deg);
+[data-swiper-button-prev="advantages"].is-active {
+    color: var(--cards);
+  transform: rotate(180deg) scale(1.2);
+  transition: all 0.3s ease;
 }
+
+[data-swiper-button-next="advantages"].is-active {
+    color: var(--cards);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+
 .swiper-pagination {
   display: flex;
   position: absolute;

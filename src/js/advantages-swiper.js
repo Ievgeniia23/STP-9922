@@ -36,4 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+
+function setActiveButton(direction) {
+  prevBtn.classList.remove('is-active');
+  nextBtn.classList.remove('is-active');
+
+  if (direction === 'prev') {
+    prevBtn.classList.add('is-active');
+  } else {
+    nextBtn.classList.add('is-active');
+  }
+}
+
+prevBtn.addEventListener('click', () => setActiveButton('prev'));
+nextBtn.addEventListener('click', () => setActiveButton('next'));
+
+
 });
