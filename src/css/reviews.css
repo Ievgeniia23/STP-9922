@@ -84,26 +84,25 @@
 .decor-leaf {
   width: 72px;
   height: 72px;
-  top: 99%;
   opacity: 0.2;
 }
 .decor-1 {
-  transform: translate(calc(-50% - 140px), calc(-50%)) scaleX(-1);
+  transform: translate(calc(-50% - 160px), calc(-50% + 20px)) scaleX(-1);
 }
 .decor-2 {
-  transform: translate(calc(-50% - 90px), calc(-50% + 10px)) scaleX(-1);
+  transform: translate(calc(-50% - 100px), calc(-50% + 30px)) scaleX(-1);
 }
 .decor-3 {
-  transform: translate(calc(-50% - 40px), calc(-50%));
+  transform: translate(calc(-50% - 35px), calc(-50% + 20px));
 }
 .decor-4 {
-  transform: translate(calc(-50% + 10px), calc(-50% + 10px)) scaleX(-1);
+  transform: translate(calc(-50% + 35px), calc(-50% + 30px)) scaleX(-1);
 }
 .decor-5 {
-  transform: translate(calc(-50% + 60px), calc(-50%)) scaleX(-1);
+  transform: translate(calc(-50% + 100px), calc(-50% + 20px)) scaleX(-1);
 }
 .decor-6 {
-  transform: translate(calc(-50% + 110px), calc(-50%));
+  transform: translate(calc(-50% + 160px), calc(-50% + 20px));
 }
 
 .decor-7 {
@@ -117,26 +116,26 @@
     top: 96%;
   }
   .decor-1 {
-    transform: translate(calc(-50% - 500px), calc(-50%));
+    transform: translate(calc(-50% - 520px), calc(-50% + 40px));
   }
   .decor-2 {
-    transform: translate(calc(-50% - 340px), calc(-50% + 10px));
+    transform: translate(calc(-50% - 350px), calc(-50% + 50px));
   }
   .decor-3 {
-    transform: translate(calc(-50% - 170px), calc(-50%));
+    transform: translate(calc(-50% - 180px), calc(-50% + 40px));
   }
   .decor-4 {
-    transform: translate(calc(-50%), calc(-50% + 10px)) scaleX(-1);
+    transform: translate(calc(-50%), calc(-50% + 50px)) scaleX(-1);
   } /* ниже на 10px */
   .decor-5 {
-    transform: translate(calc(-50% + 170px), calc(-50%)) scaleX(-1);
+    transform: translate(calc(-50% + 180px), calc(-50% + 40px)) scaleX(-1);
   }
   .decor-6 {
-    transform: translate(calc(-50% + 340px), calc(-50%));
+    transform: translate(calc(-50% + 350px), calc(-50% + 40px));
   }
   .decor-7 {
     display: block;
-    transform: translate(calc(-50% + 500px), calc(-50%)) scaleX(-1);
+    transform: translate(calc(-50% + 520px), calc(-50% + 40px)) scaleX(-1);
   }
 }
 

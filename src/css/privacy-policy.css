@@ -21,10 +21,9 @@
   font-size: 16px;
   line-height: 1.7;
   padding-bottom: 12px;
-@media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     font-size: 20px;
   }
-
 }
 .policy-number-title {
   font-weight: 700;
@@ -32,7 +31,6 @@
   line-height: 2.1;
   padding: 28px 0 12px;
   @media (min-width: 1200px) {
-
   }
 }
 .policy-text .big-block {
@@ -66,6 +64,7 @@
 .policy-email:hover,
 .policy-list a:active,
 .policy-email:active {
+  text-decoration: none;
   color: var(--for-gallery-card);
 }
 
@@ -77,7 +76,7 @@
   }
   .policy-date {
     font-size: 20px;
-   line-height: 1.7;
+    line-height: 1.7;
   }
   .policy-number-title {
     font-weight: 700;
