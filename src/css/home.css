@@ -288,7 +288,6 @@ h1 {
  background: var(--for-gallery-card);
 }
 
-
 .google-play-icon {
   width: 12px;
   height: 13px;
@@ -309,3 +308,15 @@ h1 {
 .google-play-btn .bold {
   font-weight: 700;
 }
+
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  animation: reveal 1s ease-out forwards;
+}
+
+ 
