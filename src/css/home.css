@@ -2,9 +2,10 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  background-image: url(/img/home/background-blur.png);
+  background-image: url(/img/home/background-mob.png);
   background-position: center top;
    /* background-position: calc(50% - 30px) calc(0% - 10px); */
+
   background-repeat: no-repeat;
   background-size: cover;
   min-height: auto;
@@ -15,8 +16,9 @@
   overflow: hidden;
 transition: background-position 0.4s ease-in-out;
   @media (min-width: 1200px) {
+     background-image: url(/img/home/background-blur.png);
     background-position: center top;
-    background-size: contain;
+    background-size: cover;
     /* min-height: auto; */
     scroll-margin-top: 72px;
     padding-top: 212px;
@@ -41,7 +43,7 @@ transition: background-position 0.4s ease-in-out;
     width: 52px;
     height: 102px;
     transform: rotate(9deg);
-    top: 59%;
+    top: 82%;
     right: 22%;
   }
   .screen-black-mob {
@@ -54,8 +56,8 @@ transition: background-position 0.4s ease-in-out;
     z-index: 0;
     pointer-events: none;
     transform: rotate(-10deg);
-    top: 50%;
-    right: 5%;
+    top: 60%;
+    right: 4%;
   }
 }
 
@@ -105,6 +107,7 @@ transition: background-position 0.4s ease-in-out;
 .download-link {
   position: relative;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .download-link::before,
@@ -319,4 +322,4 @@ h1 {
   animation: reveal 1s ease-out forwards;
 }
 
- 
+
