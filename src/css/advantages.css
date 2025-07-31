@@ -166,7 +166,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
-  /* opacity: .2; */
+  opacity: 0.5;
   width: 67px;
   height: 67px;
   background-image: url('../img/advantages/leaf-adv-mob.png');
