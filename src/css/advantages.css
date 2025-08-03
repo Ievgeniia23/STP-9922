@@ -86,20 +86,19 @@
 }
 
 .icon-prev {
-   transform: rotate(180deg)
+  transform: rotate(180deg);
 }
-
 
 .swiper-buttons .icon:hover,
 .swiper-buttons .icon:active,
- .swiper-buttons .icon:focus {
+.swiper-buttons .icon:focus {
   color: var(--cards);
 }
 
 .icon-prev:hover,
 .icon-prev:active,
 .icon-prev:focus {
-   transform: rotate(180deg) scale(1.1);
+  transform: rotate(180deg) scale(1.1);
 }
 
 .icon-next:hover,
@@ -108,18 +107,17 @@
   transform: scale(1.1);
 }
 
-[data-swiper-button-prev="advantages"].is-active {
-    color: var(--cards);
+[data-swiper-button-prev='advantages'].is-active {
+  color: var(--cards);
   transform: rotate(180deg) scale(1.2);
   transition: all 0.3s ease;
 }
 
-[data-swiper-button-next="advantages"].is-active {
-    color: var(--cards);
+[data-swiper-button-next='advantages'].is-active {
+  color: var(--cards);
   transform: scale(1.2);
   transition: all 0.3s ease;
 }
-
 
 .swiper-pagination {
   display: flex;
@@ -182,25 +180,25 @@
 
 .adv-left-top-mob {
   top: -10px;
-  left: -33px;
+  left: -35px;
   transform: rotate(30deg);
 }
 
 .adv-left-bottom-mob {
   bottom: 25px;
-  left: -25px;
+  left: -35px;
   transform: rotate(120deg);
 }
 
 .adv-right-top-mob {
-  top: 10px;
-  right: -28px;
+  top: -10px;
+  right: -38px;
   transform: rotateY(180deg) rotate(30deg);
 }
 
 .adv-right-bottom-mob {
-  bottom: 16px;
-  right: -28px;
+  bottom: 25px;
+  right: -38px;
   transform: rotateY(180deg) rotate(130deg);
 }
 .adv-left-top-desc,
@@ -225,72 +223,26 @@
   }
 }
 
-
 .adv-left-top-desc {
-  top: -10px;
-  left: -73px;
+  top: -60px;
+  left: -78px;
   transform: rotate(30deg);
 }
 
-
 .adv-left-bottom-desc {
-  bottom: 25px;
-  left: -65px;
+  bottom: -20px;
+  left: -78px;
   transform: rotate(120deg);
 }
 
-
 .adv-right-top-desc {
   top: -60px;
-  right: -68px;
+  right: -78px;
   transform: rotateY(180deg) rotate(30deg);
 }
 
-
 .adv-right-bottom-desc {
   bottom: -20px;
-  right: -48px;
+  right: -78px;
   transform: rotateY(180deg) rotate(130deg);
 }
-
-/* Декор
-.advantages {
-  position: relative;
-  overflow: hidden;
-}
-
-.decor-leaf {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-image: url('/img/dekor/leaf-mobil.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 66px;
-  height: 66px;
-  z-index: 0;
-  opacity: 1;
-  pointer-events: none;
-}
-
-@media (min-width: 1200px) {
-  .decor-leaf {
-    width: 150px;
-    height: 150px;
-  }
-  .decor-top-left {
-    transform: translate(calc(-50% - 620px), calc(-50% - 445px)) rotate(40deg);
-  }
-
-  .decor-top-right {
-    transform: translate(calc(-50% + 620px), calc(-50% - 445px)) rotate(-55deg);
-  }
-
-  .decor-bottom-right {
-    transform: translate(calc(-50% + 620px), calc(-50% - 145px)) rotate(-140deg);
-  }
-
-  .decor-bottom-left {
-    transform: translate(calc(-50% - 620px), calc(-50% - 145px)) rotate(125deg);
-  }
-} */
