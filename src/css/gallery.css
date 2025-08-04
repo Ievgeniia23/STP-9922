@@ -20,7 +20,7 @@
   min-height: 237px;
   padding: 0;
   margin: 0;
- box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.015);
+  box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.015);
   display: block;
 }
 
@@ -40,13 +40,11 @@
     height: 380px;
     width: 100%;
     height: auto;
-    /* box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.15); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .Gallery-item img:hover,
   .Gallery-item img:focus {
-     transform: scaleY(1.184);
-    /* height: 450px;
-    width: auto; */
+    transform: scaleY(1.184);
     box-shadow: -6px 6px 12px 0 rgba(0, 0, 0, 0.015);
   }
 }
