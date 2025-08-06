@@ -3,23 +3,23 @@
   position: relative;
   z-index: 1;
   background-image: url(/img/home/background-mob.png);
-  background-position: center top;
-   /* background-position: calc(50% - 30px) calc(0% - 10px); */
 
+  /* background-position: calc(50% - 30px) calc(0% - 10px); */
+
+
+
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: auto;
+  background-position: bottom center;
+
   padding-block: 6px;
   padding-top: 70px;
   padding-right: 35px;
   padding-bottom: 94px;
   overflow: hidden;
-transition: background-position 0.4s ease-in-out;
+  transition: background-position 0.4s ease-in-out;
   @media (min-width: 1200px) {
-     background-image: url(/img/home/background-blur.png);
-    background-position: center top;
-    background-size: cover;
-    /* min-height: auto; */
+    background-image: url(/img/home/background-blur.png);
     scroll-margin-top: 72px;
     padding-top: 212px;
     padding-bottom: 310px;
@@ -85,7 +85,6 @@ transition: background-position 0.4s ease-in-out;
     top: 18%;
     left: 85%;
     transform: translateX(-50%);
-
   }
 }
 
@@ -249,7 +248,7 @@ h1 {
   margin-bottom: 12px;
 
   @media (min-width: 1200px) {
-     flex-direction: row;
+    flex-direction: row;
     font-size: 24px;
     line-height: 1.42;
     margin-bottom: 48px;
@@ -288,7 +287,7 @@ h1 {
   background: var(--background);
 }
 .download-link:active {
- background: var(--for-gallery-card);
+  background: var(--for-gallery-card);
 }
 
 .google-play-icon {
@@ -312,14 +311,17 @@ h1 {
   font-weight: 700;
 }
 
-
 @keyframes reveal {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
   animation: reveal 1s ease-out forwards;
 }
-
-

@@ -20,7 +20,7 @@
   min-height: 237px;
   padding: 0;
   margin: 0;
-  box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.015);
+  box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0);
   display: block;
 }
 
@@ -45,7 +45,7 @@
   .Gallery-item img:hover,
   .Gallery-item img:focus {
     transform: scaleY(1.184);
-    box-shadow: -6px 6px 12px 0 rgba(0, 0, 0, 0.015);
+    box-shadow: -6px 6px 12px 0 rgba(0, 0, 0, 0);
   }
 }
 
