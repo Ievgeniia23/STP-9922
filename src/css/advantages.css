@@ -153,6 +153,9 @@
 }
 
 /* Decoration */
+.container {
+  margin-inline: 0;
+}
 
 .advantages {
   position: relative;
@@ -179,27 +182,27 @@
 }
 
 .adv-left-top-mob {
-  top: -10px;
-  left: -35px;
-  transform: rotate(30deg);
+  top: 11px;
+  left: -28px;
+  transform: rotate(50deg);
 }
 
 .adv-left-bottom-mob {
-  bottom: 25px;
-  left: -35px;
-  transform: rotate(120deg);
+  bottom: 40px;
+  left: -20px;
+  transform: rotate(130deg);
 }
 
 .adv-right-top-mob {
-  top: -10px;
-  right: -38px;
-  transform: rotateY(180deg) rotate(30deg);
+  top: 10px;
+  right: -25px;
+  transform: rotate(-55deg);
 }
 
 .adv-right-bottom-mob {
-  bottom: 25px;
-  right: -38px;
-  transform: rotateY(180deg) rotate(130deg);
+  bottom: 45px;
+  right: -20px;
+  transform: rotate(-130deg);
 }
 .adv-left-top-desc,
 .adv-left-bottom-desc,
@@ -224,25 +227,25 @@
 }
 
 .adv-left-top-desc {
-  top: -60px;
-  left: -78px;
-  transform: rotate(30deg);
+  top: -35px;
+  left: -55px;
+  transform: rotate(45deg);
 }
 
 .adv-left-bottom-desc {
-  bottom: -20px;
-  left: -78px;
+  bottom: 5px;
+  left: -35px;
   transform: rotate(120deg);
 }
 
 .adv-right-top-desc {
-  top: -60px;
-  right: -78px;
-  transform: rotateY(180deg) rotate(30deg);
+  top: -38px;
+  right: -70px;
+  transform: rotateY(180deg) rotate(40deg);
 }
 
 .adv-right-bottom-desc {
-  bottom: -20px;
-  right: -78px;
-  transform: rotateY(180deg) rotate(130deg);
+  bottom: 25px;
+  right: -40px;
+  transform: rotateY(180deg) rotate(115deg);
 }
