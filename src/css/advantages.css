@@ -6,6 +6,7 @@
 
 .swiper-wrapper.card-wrapper {
   display: flex;
+
 }
 
 .swiper-slide.adv-wrapp {
@@ -28,7 +29,18 @@
     padding: 32px;
     border-radius: 16px;
   }
+
 }
+
+
+@media (min-width: 1440px) {
+  .swiper[data-swiper="advantages"] {
+    max-width: calc(3 * 352px + 2 * 24px);
+    margin: 0 auto;
+  }
+}
+
+
 .adv-text {
   font-family: var(--font-family);
   font-weight: 600;
@@ -154,7 +166,6 @@
 
 /* Decoration */
 
-
 .advantages {
   position: relative;
   overflow: hidden;
@@ -246,4 +257,29 @@
   bottom: 25px;
   right: -40px;
   transform: rotateY(180deg) rotate(115deg);
+}
+
+/* Decoration for big screen  */
+
+@media (min-width:1440px) {
+ .decor-adv {
+    width: 200px;
+    height: 200px;
+
+  }
+
+.adv-right-top-desc {
+    top: -60px;
+    right: -45px;
+    transform: rotateY(180deg) rotate(48deg);
+}
+.adv-right-bottom-desc {
+    bottom: 25px;
+    right: -45px;
+    transform: rotateY(180deg) rotate(120deg);
+}
+
+
+
+
 }
