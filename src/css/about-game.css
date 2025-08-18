@@ -7,8 +7,9 @@
 
 .wrapper-about-game {
   @media (min-width: 1200px) {
-    margin-right: 215px;
-  }
+      max-width: 937px;
+     
+      }
 }
 
 .title {

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: prevBtn,
       nextEl: nextBtn,
     },
-    spaceBetween: 16, // базовое значение
+    spaceBetween: 16,
     breakpoints: {
       320: {
         slidesPerView: 2,
@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         spaceBetween: 24,
       },
+1440: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+
     },
   });
 
